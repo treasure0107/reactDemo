@@ -1,0 +1,224 @@
+.evaluate-list-page{
+    background: #fff;
+    padding: 24px;
+    .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
+        .detail-box{
+            background: #ffece6!important;
+        }
+    }
+    .score-box{
+        display: flex;
+        margin-bottom: 20px;
+        height: 48px;
+        background: $adminPink;
+        align-items: center;
+        padding-left: 15px;
+        color: $txt_grey_dark;
+
+        span{
+            font-size: $fontSize4;
+            color: $mainColor;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            margin-right: 48px;
+        }
+    }
+    .ant-table-thead{
+        height: 48px!important;
+        tr{
+            th{
+                background: $adminLightGray;
+            }
+        }
+    }
+    .goods-info-evaluater-box{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .iconfont{
+            color:$adminBlue;
+            margin-left: 2px   
+        }
+    }
+    .ant-table-body{
+        font-size: $h5!important;
+    }
+    .goods-info-table-box{
+        display: flex;
+        width: 320px;
+        .pic-box{
+            width: 52px;
+            height: 52px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .goods-name{
+              /* autoprefixer: ignore next*/
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on */
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+        }
+    }
+    .goods-info-evaluateContent-box{
+        width: 270px;
+        display: flex;
+        .pic-box{
+            width: 52px;
+            height: 52px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .evaluateContent-Info{
+            /* autoprefixer: ignore next*/
+           // -webkit-box-orient: vertical;
+            /* autoprefixer: on */
+            overflow: hidden;
+            width: 210px;
+            // text-overflow: ellipsis;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 3;
+            word-break: break-all;
+            height: 53px;
+            position: relative;
+            .detail-box{
+                font-size: $h5;
+                cursor: pointer;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: white;
+                z-index: 10;
+                transition: all 0.3s, border 0s;
+                padding: 0 2px;
+                .detail{
+                    color:$adminBlue;
+                }
+            }
+        }
+    }
+    .goods-info-opreat-box{
+        cursor: pointer;
+        color: $adminBlue;
+    }
+    .evaluate-reply-box{
+        color: $txt_grey_dark;
+        padding-left: 17px;
+        margin: 19px 0;
+    }
+    .goods-info-evaluate-detail-box{
+        .pic-list-box{
+            display: flex;
+            .pic-box{
+                width: 52px;
+                height: 52px;
+                margin-right: 8px;
+                flex-shrink: 0;
+            }
+        }
+        .margin{
+            margin-top: 6px;
+            margin-bottom:11px;
+        }
+    }
+    .refundList-form-box{
+        background: #fff;
+        padding: 17px 12px 23px 17px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+    .form-box{
+        background: #fff;
+        padding: 17px 12px 23px 0;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        .timer-row{
+            margin-top: 12px;
+            .ant-form-item-label{
+                width: 16.333%
+            }
+        }
+    }
+    .no-bg-btn{
+        background: #fff!important;
+        color: $txtColor1!important;
+    }
+    .apply-amount{
+        color: $mainColor;
+    }
+    .apply-looking-detail{
+        color: $adminBlue;
+    }
+    .ant-pagination{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        float: none;
+        .ant-pagination-total-text{
+            order: 1;
+        }
+    }
+}
+.refund-list-page{
+    .refundList-form-box{
+        background: #fff;
+        padding: 17px 12px 23px 17px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+    .refundContent-Info{
+        /* autoprefixer: ignore next*/
+        // -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        overflow: hidden;
+        max-width: 200px;
+        // text-overflow: ellipsis;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        word-break: break-all;
+        position: relative;
+    }
+    .refund-Info{
+        /* autoprefixer: ignore next*/
+        // -webkit-box-orient: vertical;
+        /* autoprefixer: on */
+        overflow: hidden;
+        max-width: 200px;
+        // text-overflow: ellipsis;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        word-break: break-all;
+        position: relative;
+    }
+    .no-bg-btn{
+        background: #fff!important;
+        color: $txtColor1!important;
+    }
+    .ant-tabs-bar{
+        margin-bottom: 0!important;
+    }
+    .opreat-box-refundList{
+        span,a{
+            color:$adminBlue;
+        }
+    }
+}
+.commit-detail-modal{
+    .img-list{
+        width: 74px;
+        height: 74px;
+        margin-left: 15px;
+       &:first-child{
+           margin-left: 0
+       }
+    }
+    .comment_content{
+        margin-top: 15px;
+        color: $txt_grey_dark;
+        font-size:13px;
+    }
+}

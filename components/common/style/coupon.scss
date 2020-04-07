@@ -1,0 +1,216 @@
+.couponlist {
+  margin-top: 9px;
+  // margin-top: 50px;
+  // padding-top: 50px;
+  ul {
+    overflow: hidden;
+  }
+  ul li {
+    float: left;
+    width: 40%;
+    margin: 10px 50px;
+    border-radius: 2px;
+    position: relative;
+    // border: 1px solid red;
+  }
+  .couponleftbox {
+    float: left;
+    width: 130px;
+    height: 120px;
+    text-align: center;
+    background: $mainColor;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -4px;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: url("../../../assets/images//common/couponbg1.png");
+      z-index: 8;
+      background-size: 100% 100%;
+    }
+  }
+  .couponrightbox {
+    background: #fbebe9;
+    height: 120px;
+    width: 310px;
+    float: left;
+    position: relative;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .shopcoupon {
+    .couponrightbox {
+      background: #f8efe5;
+    }
+    .desciription {
+      color: #db923c;
+    }
+    .user_p {
+      a {
+        background: #db923c;
+      }
+    }
+    .couponleftbox {
+      background: #db923c;
+      &::after {
+        content: "";
+        position: absolute;
+        right: -4px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: url("../../../assets/images//common/couponbg2.png");
+        z-index: 8;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .expiredcoupon {
+    .couponleftbox {
+      background: rgb(209, 209, 209);
+    }
+    .couponrightbox {
+      background: rgb(243, 243, 243);
+    }
+    p {
+      color: #bcbcbc !important;
+    }
+    .couponleftbox {
+      &::after {
+        content: "";
+        position: absolute;
+        right: -4px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: url("../../../assets/images//common/couponbg3.png");
+        z-index: 8;
+        background-size: 100% 100%;
+      }
+    }
+    .desciription{
+      color: $txtColor5;
+    }
+  }
+  .couponrightbox p {
+    margin-left: 20px;
+    line-height: 25px;
+  }
+  .couponrightbox p:first-child {
+    margin-top: 10px;
+  }
+  .couponleftbox span {
+    display: block;
+    width: 100%;
+  }
+  .amount_a {
+    color: $whiteColor;
+    font-size: 16px;
+    margin-top: 18px;
+    display: block;
+    span {
+      font-size: 26px;
+      display: inline-block;
+      width: auto;
+    }
+  }
+  .expired {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+  .expiredst {
+    color: $txtColor5 !important;
+  }
+  .expired img {
+    width: 56px;
+  }
+  .timep {
+    color: $txtColor3;
+    font-size: $fontSize1;
+  }
+  .available {
+    color: $txtColor4;
+    font-size: $font-base;
+    font-weight: bold;
+  }
+  p.userof {
+    color: $txtColor3;
+    font-size: $fontSize1;
+    max-width: 180px;
+    line-height: 24px;
+  }
+  .user_p {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+  .getcoupon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .user_p a {
+    border-radius: 40px;
+    padding: 7px 18px;
+    background: $mainColor;
+    color: $whiteColor;
+  }
+  .desciription {
+    color: $txtColor1;
+    font-size: $fontSize1;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+    &:hover{
+      .bubble{
+        display: block;
+      }
+    }
+  }
+  .full_a {
+    color: $whiteColor;
+    font-size: $font-base;
+    padding: 0 5px;
+  }
+  .bubble {
+    width: 400px;
+    height: 113px;
+    background: $whiteColor;
+    position: absolute;
+    z-index: 5;
+    top: 28px;
+    padding: 10px 16px;
+    display: none;
+    h2{
+      font-size: $fontSize1;
+      color: $txtColor4;
+    }
+    p{
+      font-size: $fontSize1;
+      color: $txtColor3;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+  .bubble:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 16px;
+    width: 0;
+    height: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent;
+    margin-bottom: -4px;
+    border-bottom-color: currentColor;
+    color: $whiteColor;
+  }
+}

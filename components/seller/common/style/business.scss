@@ -1,0 +1,888 @@
+.business-set-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .invoice-success-box {
+    padding: 24px;
+    background: #fff;
+    min-height: 511px;
+    position: relative;
+
+    .invoice-content-box {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 592px;
+
+      .left-icon-box {
+        float: left;
+
+        .iconfont {
+          font-size: 68px;
+          color: $adminBlue;
+        }
+      }
+
+      .right-content-box {
+        float: left;
+        margin-left: 18px;
+        width: 492px;
+
+        .invoice-number {
+          margin-bottom: 12px;
+
+          .number-detail {
+            color: $adminBlue
+          }
+        }
+
+        .invoice-content {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .business-location {
+    .ant-form-item {
+      width: 145px;
+      float: left;
+      margin-left: 5px;
+    }
+  }
+
+  .ant-tabs-bar {
+    margin: 0;
+
+    .ant-tabs-tab {
+      width: 128px;
+      height: 36px;
+      background: $adminDarkGray;
+      color: $txt_grey;
+      text-align: center;
+    }
+
+    // .ant-tabs-tab-active{
+    //     border:none!important;
+    // }
+  }
+
+  .account-Info-box {
+    padding: 24px;
+    background: #fff;
+    min-height: 511px;
+
+    .introduce {
+      margin-left: 10px;
+
+      .c-btn {
+        color: $adminBlue;
+        cursor: pointer;
+      }
+    }
+
+    .get-code {
+      .ant-btn-primary {
+        margin-left: 10px;
+      }
+    }
+
+    .opreat-btn {
+      cursor: pointer;
+      color: $adminBlue;
+    }
+
+    .bank-name-box {
+      width: 180px;
+
+      .bank-name-master {
+        float: left;
+      }
+
+      .change-bank-info {
+        float: right;
+        cursor: pointer;
+        color: $adminBlue;
+      }
+    }
+
+    .license-img {
+      width: 104px;
+      height: 104px;
+    }
+
+    .no-bg-btn {
+      background: #fff !important;
+      color: $txtColor1 !important;
+    }
+
+    .cash-tips-info {
+      color: $mainColor;
+
+      a {
+        color: $adminBlue
+      }
+    }
+
+    .form-box {
+      margin-bottom: 25px;
+
+      .ant-form-inline .ant-form-item {
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 0;
+      }
+
+      .timer-row {
+        margin-top: 12px;
+
+        .ant-form-item-label {
+          width: 16.333%
+        }
+      }
+    }
+
+    .invoiceInfo-type {
+      height: 106px;
+      background: $adminPink;
+      padding: 0 12px;
+      overflow: hidden;
+
+      .content-type-box {
+        height: 26px;
+        line-height: 26px;
+        text-align: left;
+
+        &:first-child {
+          margin-top: 14px;
+        }
+
+        .type-content {
+          color: $txt_grey_dark;
+          font-size: 13px;
+        }
+
+        .type-content-main {
+          color: $mainColor;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .sort-input-lable {
+      .ant-col-5 {
+        width: 80px;
+      }
+    }
+
+    .line-input {
+      width: 302px;
+      // &:last-child{
+      //     .ant-col-4{
+      //         width: 80px;
+      //     }
+      // }
+      // .ant-col-4{
+      //     width: 117.13px;
+      // }
+      .ant-col-18 {
+        width: 160px;
+      }
+    }
+
+    .bottom-sub-box-editInfo {
+      margin-top: 20px;
+      text-align: right;
+
+      .ant-btn-primary {
+        margin-left: 14px;
+      }
+    }
+
+    .Invoice-info {
+      margin-top: 29px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .title {
+        font-size: 13px;
+        margin-bottom: 18px;
+        color: $txt_grey_dark;
+      }
+
+      .info-content-box {
+        p, span, section, div {
+          color: $txt_grey_dark;
+        }
+
+        .need-border {
+          border-top: solid thin $adminBorderColor !important;
+          border-bottom: solid thin $adminBorderColor !important;
+        }
+
+        div {
+          display: flex;
+          height: 48px;
+          border-top: solid thin $adminBorderColor;
+          border-bottom: solid thin $adminBorderColor;
+          align-items: center;
+
+          &:first-child {
+            border-bottom: none;
+          }
+
+          section {
+            width: 182px;
+            font-size: $h5;
+            margin-right: 35px;
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            p {
+              font-size: 12px;
+
+              &:nth-child(1) {
+                min-width: 60px;;
+              }
+
+              &:nth-child(2) {
+                width: 122px;
+              }
+            }
+
+            .double-line {
+              /* autoprefixer: ignore next */
+              -webkit-box-orient: vertical;
+              /* autoprefixer: on */
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              // width: 360px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-table-body {
+      font-size: $h5
+    }
+
+    .ant-table-thead > tr > th {
+      color: $txt_grey;
+    }
+
+    .money-detail-box {
+      overflow: hidden;
+      height: 92px;
+      margin-bottom: 22px;
+
+      .money-detail {
+        float: left;
+        height: 90px;
+        border-radius: 4px;
+        background: $adminLightGray;
+        width: 475px;
+        padding: 11px 18px;
+
+        .link-content {
+          color: $adminBlue;
+          cursor: pointer;
+        }
+
+        .anticon {
+          cursor: pointer;
+          margin-right: 7px;
+        }
+
+        &:last-child {
+          margin-left: 20px
+        }
+
+        .shop-title {
+          color: $txt_grey_dark;
+        }
+
+        .shop-price {
+          font-size: 22px;
+          color: $txt_grey_dark;
+          font-weight: bold;
+          margin-right: 19px;
+        }
+
+        .second-box {
+          margin-top: 11px;
+          display: flex;
+        }
+      }
+    }
+
+    .opreat-table-invoiceList {
+      span {
+        cursor: pointer;
+        color: $adminBlue;
+        vertical-align: middle;
+
+        &:last-child {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .card-bg-box {
+      background: url($imageFilePath+ 'seller/img_card.png') no-repeat;
+      background-size: 100% 100%;
+      width: 260px;
+      height: 160px;
+      padding: 15px;
+      color: #fff;
+      position: relative;
+
+      .card-title {
+        font-size: 13px
+      }
+
+      .card-number {
+        margin-top: 22px;
+        // margin-top: 14px;
+        font-size: $fontSize3;
+        word-break: break-all;
+      }
+
+      .user_detail {
+        font-size: 12px;
+        margin-top: 6px;
+        word-break: break-all;
+      }
+
+      .card-opreat {
+        font-size: 12px;
+        // margin-top: 23px;
+        position: absolute;
+        bottom: 14px;
+        right: 17px;
+        cursor: pointer;
+
+        .opreat-btn {
+          float: right;
+          color: #fff;
+        }
+      }
+    }
+
+    .price-box-invoice {
+      overflow: hidden;
+
+      .price-box {
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+      }
+
+      .price-box-left {
+        float: left;
+      }
+
+      .price-box-right {
+        float: right;
+
+      }
+
+      .price-name {
+        color: $txt_grey_dark;
+        vertical-align: middle;
+      }
+
+      .price-detail {
+        color: $txt_grey_dark;
+        font-size: $fontSize4;
+        vertical-align: middle;
+      }
+
+      .price-detail-chooseDetail {
+        color: $mainColor;
+        font-size: $fontSize4;
+        vertical-align: middle;
+        margin-right: 14px
+      }
+    }
+
+    .price-tips-invoice {
+      height: 40px;
+      background: $adminPink;
+      padding: 0 12px;
+      line-height: 40px;
+      text-align: left;
+      color: $txt_grey_dark;
+      margin-top: 16px;
+
+      .tips-name {
+        font-weight: bold;
+      }
+    }
+
+    .ant-upload-text {
+      font-size: 13px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 14px;
+    }
+
+    .content-line-box {
+      display: flex;
+      justify-content: space-between;
+      height: 84px;
+      border-bottom: solid thin #e7e7e7;
+      align-items: center;
+      padding-right: 20px;
+
+      .content-detail {
+        flex-grow: 1;
+        display: flex;
+        padding-left: 50px;
+        align-items: center;
+
+        .title {
+          color: $txt_grey_dark;
+          font-weight: bold;
+        }
+
+        .content {
+          color: $txt_grey;
+          font-size: 13px;
+        }
+
+        .iconfont {
+          font-size: 53px;
+          margin: 0 25px;
+        }
+
+        .iconzhuanyepeixun {
+          color: $adminBlue;
+        }
+
+        .iconshidirenzheng {
+          color: #67D111;
+        }
+
+        .iconjinpaifuwu {
+          color: #FEA802
+        }
+
+        .iconzhiliangbaozheng {
+          color: $adminBlue;
+        }
+      }
+
+      .active {
+        color: $adminBlue !important;
+      }
+
+      .opreat-box {
+        display: flex;
+        align-items: center;
+        color: $txt_grey;
+        width: 110px;
+        justify-content: center;
+
+        .iconfont {
+          color: #9A9999;
+        }
+      }
+    }
+
+    .tips-info {
+      font-size: $h5;
+      color: $txt_grey
+    }
+
+    .invoice-detail {
+      border: solid thin $adminBorderColor;
+      border-radius: 4px;
+      padding: 15px;
+
+      .anticon-question-circle {
+        margin-left: 6px;
+      }
+
+      & > section {
+        margin-bottom: 19px;
+        font-size: 13px;
+        color: $txt_grey_dark;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: $adminBlue;
+          cursor: pointer;
+          display: inline-block;
+          margin-left: 24px;
+        }
+      }
+    }
+
+    .price-box-invoiceInfo {
+      color: $txt_grey_dark;
+      margin-top: 20px;
+      text-align: right;
+
+      .price-box {
+        display: inline-block;
+        margin-left: 23px;
+      }
+
+      .price-detail {
+        color: $mainColor
+      }
+    }
+  }
+
+  .default-color {
+    color: $mainColor
+  }
+
+  .get-coordinate {
+    margin-left: 8px;
+    color: $adminBlue;
+    cursor: pointer;
+  }
+
+  .none-opreat {
+    cursor: not-allowed
+  }
+}
+
+.shop-loc-set-page {
+  padding: 24px;
+  background: #fff;
+
+  .ant-table-thead {
+    tr {
+      th {
+        background: $adminLightGray;
+        color: $txt_grey_dark;
+      }
+    }
+  }
+
+  .region-box {
+    display: flex;
+    color: $txt_grey_dark;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .iconfont {
+      margin: 0 2px 0 15px;
+    }
+  }
+
+  .table-second-data {
+    color: $adminBlue
+  }
+
+  .table-first-data {
+    color: $txt_grey_dark;
+    font-weight: bold;
+  }
+
+  .ant-table-row {
+    height: 84px;
+  }
+}
+
+.distribute-list {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  min-height: 600px;
+  background-color: #fff;
+
+  .mr10 {
+    margin-right: 10px;
+  }
+
+  .ml10 {
+    margin-left: 10px;
+  }
+
+  .ml30 {
+    margin-left: 30px;
+  }
+
+  .pl10 {
+    padding-left: 10px;
+  }
+
+  .pr10 {
+    padding-right: 10px;
+  }
+
+  .pt10 {
+    padding-top: 10px;
+  }
+
+  .pt30 {
+    padding-top: 30px;
+  }
+
+  .pb10 {
+    padding-bottom: 10px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .tc {
+    color: $mainColor;
+  }
+
+  .search-btn {
+    .l-icon {
+      display: inline-block;
+      width: 56px;
+      text-align: right;
+    }
+
+    .search-input {
+      width: 169px;
+      vertical-align: middle;
+    }
+
+    .btn:hover {
+      color: #fff;
+      background-color: $mainColor;
+      border: 1px solid $mainColor !important;
+    }
+  }
+
+  .btn-c {
+    color: $mainColor;
+    border: 1px solid $mainColor !important;
+  }
+
+  .delivery-area {
+    font-size: 12px;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dis-table-con {
+    position: relative;
+    padding: 10px;
+    .ant-table-thead {
+      //tr > th {
+      //  padding: 10px 16px;
+      //}
+      .ant-table-header-column {
+        font-size: 12px !important;
+      }
+    }
+    .batch-btn {
+      position: absolute;
+      left: 0;
+      bottom: 16px;
+    }
+  }
+}
+
+.shop-set-modal {
+  // .ant-row{
+  //     margin-bottom: 10px;
+  // }
+  .ant-upload-text {
+    font-size: 13px;
+  }
+
+  .order-search-form {
+    .ant-row:first-child {
+      // background: red
+      .ant-col:first-child {
+        .ant-row {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+
+  .Qualifications-form {
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .train-upload-box {
+    display: flex;
+    align-items: center;
+
+    .jump-to-train-box {
+      width: 300px;
+      font-size: 13px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+
+      .jump-to-train {
+        color: $adminBlue;
+      }
+    }
+  }
+
+  .train-explain {
+    display: flex;
+    font-size: $h5;
+    color: $txt_grey;
+  }
+
+  .ant-upload {
+    width: 72px;
+    height: 72px;
+  }
+
+  .ant-modal-footer {
+    div {
+      display: flex;
+      justify-content: flex-end
+    }
+
+    .ant-btn-primary {
+      order: -1;
+      margin-right: 12px;
+    }
+  }
+
+  .ant-upload-list-picture-card .ant-upload-list-item {
+    width: 72px;
+    height: 72px;
+  }
+
+  .ant-btn {
+    width: 72px;
+    height: 28px;
+  }
+
+  .cus-service-title {
+    color: $txt_grey_dark;
+    font-size: 13px;
+  }
+
+  .cus-service-title-next {
+    font-size: $h5;
+    color: $txt_grey;
+  }
+}
+
+.shop-map-modal {
+  .shop-map-box {
+    position: relative;
+
+    #map_container {
+      width: 100%;
+      height: 300px;
+    }
+
+    .map-longitude-atitude {
+      color: $txt_grey_dark;
+      font-size: $h5;
+      margin-top: 12px;
+
+      span {
+        color: $mainColor
+      }
+    }
+  }
+}
+
+.realNameAuthentication {
+  &.account-Info-box {
+    padding-left: 36px;
+  }
+
+  .item {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .idCardPhotos {
+    .photos {
+      .photo {
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          padding: 8px;
+          cursor: pointer;
+          border: 1px solid #eee;
+        }
+
+        p {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+.previewImgModal {
+  .ant-modal-close-x {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.historyPurchaseModal {
+  .h-p-l {
+    padding-bottom: 6px;
+  }
+
+  .time {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  .price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+
+  }
+
+  .des {
+    display: inline-block;
+    width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-left: 30px;
+  }
+}

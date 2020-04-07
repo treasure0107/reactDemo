@@ -1,0 +1,74 @@
+.uploadimg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    .ant-upload.ant-upload-select-picture-card {
+        width: 50px;
+        height: 50px;
+        border-style: solid;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .imgs {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin-right: 10px;
+        overflow: hidden;
+        .del {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 10;
+            width: 14px;
+            height: 14px;
+            background: $grayColor;
+            color: $txtColor2;
+            font-size: $fontSize1;
+            text-align: center;
+            line-height: 14px;
+        }
+        .avatar-uploader {
+            position: absolute;
+            right: 18px;
+            top: 2px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 10;
+
+            .ant-upload-select-picture-card {
+                width: auto;
+                height: auto;
+            }
+        }
+        .ant-upload.ant-upload-select-picture-card > .ant-upload {
+            padding: 0;
+        }
+        .ant-upload.ant-upload-select-picture-card {
+            background: transparent;
+            border: none;
+        }
+        .bigeye {
+            position: absolute;
+            right: 30px;
+            top: 5px;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 10;
+            a {
+                color: $txtColor3;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        // .ant-upload {
+        //     width: 102px!important;
+        //     height: 102px!important;
+        // }
+    }
+}

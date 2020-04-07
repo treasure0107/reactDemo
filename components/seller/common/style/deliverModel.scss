@@ -1,0 +1,105 @@
+
+.deliver-model-page{
+    // width: 520px;
+    overflow: hidden;
+    .ant-form-item{
+        margin-bottom: 12px;
+    }
+    .choose-box{
+        color:$txt_grey_dark;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .goods-info-table-box{
+        display: flex;
+        width: 320px;
+        font-size: $h5;
+        color: $txt_grey_dark;
+        .pic-box{
+            width: 52px;
+            height: 52px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .goods-name{
+              /* autoprefixer: ignore next*/
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on */
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+        }
+    }
+    .ant-table-body{
+        font-size: $h5
+    }
+    .order-info{
+        .title{
+            font-size: 13px;
+            margin-bottom: 18px;
+            color: $txt_grey_dark;
+        }
+        .info-content-box{
+            p,span,section,div{
+                color: $txt_grey_dark;
+            }
+            div{
+                display: flex;
+                height: 48px;
+                border-top:solid thin $adminBorderColor;
+                border-bottom:solid thin $adminBorderColor;
+                align-items: center;
+                &:first-child{
+                    border-bottom: none;
+                }
+                section{
+                    width: 182px;
+                    font-size: $h5;
+                    margin-right: 35px;
+                    display: flex;
+                    align-items: center;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    p{
+                        font-size: 12px;
+                        &:nth-child(1){
+                            min-width: 60px;;
+                        }
+                        &:nth-child(2){
+                            width: 122px;
+                        }
+                    }
+                    .double-line{
+                         /* autoprefixer: ignore next */
+                        -webkit-box-orient: vertical;
+                        /* autoprefixer: on */
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        // width: 360px;
+                    }
+                }
+            }
+        }
+    }
+    .cancle-btn{
+        margin-top: 20px;
+        color: $txt_grey;
+        border-color: $txt_grey;
+        margin-left: 16px;
+    }
+    .price-box{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 12px;
+        margin-top: 18px;
+        .price{
+            color: $mainColor;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.notice-container {
+  .right-content-page {
+    padding: 20px 45px 62px;
+    min-height: 500px;
+    position: relative;
+    .noNotice {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header {
+      text-align: right;
+      cursor: pointer;
+      font-size: 14px;
+      color: #353333;
+    }
+    .content {
+      .notice-item {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid #E9E9E9;
+        &.read {
+          .notice-item-title{
+            color: #999999;
+          }
+          .desc {
+            color: #999999;
+          }
+        }
+        .notice-item-title {
+          font-size: 14px;
+          color: #353333;
+          line-height: 15px;
+          margin-bottom: 10px;
+        }
+        .notice-item-content {
+          font-size: 12px;
+          line-height: 13px;
+          color: #191919;
+          .operate {
+            color: #E6240F;
+            margin-left: 23px;
+            cursor: pointer;
+          }
+        }
+      }
+      .ant-pagination {
+        position: absolute;
+        right: 0;
+        bottom: -47px;
+      }
+    }
+  }
+}

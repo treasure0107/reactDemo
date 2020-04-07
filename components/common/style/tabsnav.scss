@@ -1,0 +1,32 @@
+.tabsnav {
+  display: inline-block;
+  margin-left: 36px;
+  a {
+    width: auto;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 38px;
+    font-size: 16px;
+    &.act {
+      color: $txtColor1;
+    }
+    span {
+      font-size: $fontSize1;
+      color: $txtColor2;
+      min-width: 32px;
+      height: 22px;
+      padding-left: 2px;
+      padding-right: 2px;
+      display: inline-block;
+      line-height: 18px;
+      text-align: center;
+      background: (url('../../../assets/images//common/pop.png')) no-repeat;
+      background-size: 100% 100%;
+      transform: scale(0.8);
+      margin-top: -7px;
+      vertical-align: middle;
+    }
+  }
+}

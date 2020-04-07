@@ -1,0 +1,127 @@
+/*
+ * designonline.scss
+ */
+
+.ep-design-online {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: #E1E1E1;
+  overflow-x: auto;
+  overflow-y: auto;
+  .ep-box-inner {
+    width: 1200px;
+    .ep-head {
+      height: 60px;
+      background-color: #FFF;
+      margin-top: 28px;
+      .ep-head-inner {
+        span {
+          font-size: 16px;
+          line-height: 16px;
+          color: #191919;
+        }
+      }
+      .ep-back {
+        top: 17px;
+        right: 18px;
+        height: 26px;
+        border: 1px solid #BCBCBC;
+        border-radius: 13px;
+        padding: 0 13px;
+        span {
+          font-size: 12px;
+          line-height: 12px;
+          color: #191919;
+        }
+      }
+    }
+
+    .ep-head1 {
+      margin-top: 12px;
+      background-color: #FFF;
+      padding-left: 19px;
+      .ep-box1 {
+        height: 56px;
+        .ep-spans {
+          height: 16px;
+          .ep-span1 {
+            span {
+              font-size: 16px;
+              line-height: 16px;
+              color: #191919;
+            }
+          }
+          .ep-span2 {
+            margin-left: 15px;
+            span {
+              font-size: 14px;
+              line-height: 14px;
+              color: #999;
+            }
+          }
+          .ep-span3 {
+            margin-left: 16px;
+            span {
+              font-size: 14px;
+              line-height: 14px;
+              color: #191919;
+            }
+          }
+        }
+      }
+
+      .ep-box2 {
+        padding: 11px 21px 16px 51px;
+        min-height: 30px;
+        .ep-tag-item {
+          height: 24px;
+          padding: 0 11px;
+          margin-right: 9px;
+          span {
+            font-size: 14px;
+            line-height: 14px;
+            color: #7B7B7B;
+          }
+        }
+        .ep-tag-item:hover {
+          background-color: #E9E9E9;
+          border-radius: 12px;
+        }
+        .ep-tag-item-active {
+          background-color: #F12620;
+          border-radius: 12px;
+          span {
+            color: #FFF;
+          }
+        }
+
+        .ep-tag-label {
+          top: 15px;
+          left: 0;
+          color: #999;
+        }
+      }
+    }
+
+    .ep-body {
+      margin-top: 18px;
+      width: 1250px;
+      height: 1310px;
+    }
+
+    .ep-foot {
+      height: 38px;
+      margin-top: 6px;
+      margin-bottom: 57px;
+      > .ant-pagination {
+        float: right;
+        .ep-prev, .ep-next {
+          padding: 0px 17px;
+        }
+      }
+    }
+  }
+}

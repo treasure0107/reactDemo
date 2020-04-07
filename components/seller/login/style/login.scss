@@ -1,0 +1,146 @@
+.loginWrapper {
+  .noAccount {
+    line-height: 100px;
+    >a {
+      color: $mainColor;
+    } 
+  }
+  .mainBody {
+    position: relative;
+    // position: absolute;
+    // top: 100px;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    width: 100%;
+    height: 768px;
+    background: url('../../../../assets/images/seller/login/login_bg.jpg') no-repeat center center/cover;
+    .shopsManage, .login {
+      .header {
+        margin-bottom: 27px;
+        .logo {
+          width: 111px;
+          float: left;
+        }
+        .line {
+          float: left;
+          width: 1px;
+          height: 16px;
+          background-color: #E7E7E7;
+          margin: 11px 12px 0;
+        }
+        .title {
+          float: left;
+          color: #353333;
+          font-size: 18px;
+          line-height: 36px;
+        }
+      }
+    }
+    .login {
+      position: absolute;
+      width: 368px;
+      height: 366px;
+      background-color: #fff;
+      border-radius: 4px 8px 8px 8px;
+      top: 50%;
+      margin-top: -183px;
+      right: 390px;
+      padding: 30px 40px;
+      font-size: 0;
+      .middle {
+        margin-bottom: 12px;
+        .ant-form-item {
+          margin-bottom: 0;
+          &.passwordForm {
+            .ant-form-item-control {
+              margin-bottom: 20px;
+              height: 60px;
+            }
+          }
+          .ant-form-item-control {
+            // padding-bottom: 16px;
+            height: 60px;
+            input {
+              height: 40px;
+            }
+          }
+        }
+        .loginBtn {
+          width: 100%;
+          height: 40px;
+          font-size: 16px;
+        }
+      }
+      .bottom {
+        .remember {
+          float: left;
+        }
+        .forgetPassword {
+          float: right;
+          font-size: 12px;
+          color: $mainColor;
+          cursor: pointer;
+          padding: 0;
+        }
+        .ant-checkbox-wrapper {
+          color: #353333;
+          + .ant-checkbox-wrapper {
+            margin-left: 34px;
+          }
+        }
+      }
+    }
+    .shopsManage {
+      position: absolute;
+      width: 482px;
+      height: 410px;
+      background-color: #fff;
+      border-radius: 4px 8px 8px 8px;
+      top: 50%;
+      left: 50%;
+      margin-top: -162px;
+      margin-left: -241px;
+      padding: 30px 40px;
+      font-size: 0;
+      overflow: auto;
+      .subTitle {
+        color: #353333;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 16px;
+      }
+      .shopsWrapper {
+        .shop {
+          font-size: 14px;
+          line-height: 50px;
+          border-bottom: 1px solid #EBEBEB;
+          .name {
+            width: 110px;
+            float: left;
+            color: #353333;
+            font-weight: bold;
+          }
+          .type {
+            float: right;
+            font-size: 12px;
+            color: #656566;
+            margin-right: 166px;
+          }
+          .manage {
+            float: right;
+            width: 72px;
+            height: 28px;
+            line-height: 28px;
+            background-color: $mainColor;
+            text-align: center;
+            border-radius: 4px;
+            color: #fff;
+            margin-top: 11px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

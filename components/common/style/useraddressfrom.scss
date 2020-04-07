@@ -1,0 +1,50 @@
+    // .isModal{
+    //     .ant-modal-body{
+    //         // min-height: 456px;
+    //     }
+    // }
+.addmaage{
+    .isdefault_box{
+        width: 200px;
+        margin-left: 96px;
+    }
+    .manage-none{
+        display: none;
+    }
+    .manage-left{
+        width: 100%;
+        padding-left: 100px;
+    }
+    .call-btn{
+        margin-right: 10px;
+    }
+    .ant-form-item{
+        width: 100%;
+        margin-bottom: 10px !important;
+    }
+    .ant-input{
+        // border: 1px solid #d1d1d1 !important;
+    }
+    .ant-form-item-control-wrapper{
+        width: 304px;
+    }
+    .ant-form-item-label{
+        width: 94px;
+    }
+    .ant-modal-body{
+        max-height:440px !important;
+    }
+    .ant-input-group .ant-select{
+        width: 50px !important;
+        border: 1px solid #eee;
+        border-right: none;
+    }
+    .ant-input-group-addon .ant-select .ant-select-selection{
+        background: #eee;
+    }
+    .has-error .ant-input-group-addon{
+        // color: no;
+        background-color: #eee !important;
+        border-color: #eee !important;
+    }
+}

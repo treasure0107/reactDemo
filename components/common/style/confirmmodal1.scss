@@ -1,0 +1,86 @@
+/*
+ * confirmmodal1.scss
+ */
+
+.ep-pop-box-confirm-box1 {
+  .ant-modal-content {
+    border-radius: 0;
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+
+  .ep-inner {
+    width: 420px;
+    height: 160px;
+    background-color: #FFF;
+    padding-top: 26px;
+    .ep-title {
+      span {
+        font-size: 18px;
+        line-height: 18px;
+        color: #191919;
+      }
+    }
+
+    .ep-content {
+      margin-top: 21px;
+      span {
+        font-size: 14px;
+        line-height: 14px;
+        color: #7B7B7B;
+      }
+    }
+
+    .ep-btns {
+      margin-top: 21px;
+
+      .ep-btn1 {
+        height: 30px;
+        border: 1px solid #D13A26;
+        background-color: #FFF;
+        .ep-btn1-inner {
+          min-width: 86px;
+          span {
+            font-size: 14px;
+            line-height: 14px;
+            color: #D13A26;
+          }
+        }
+      }
+      .ep-btn1:hover {
+        background-color: #D13A26;
+        span {
+          color: #FFF;
+        }
+      }
+
+      .ep-btn2 {
+        margin-left: 16px;
+        height: 30px;
+        border: 1px solid #7B7B7B;
+        background-color: #FFF;
+        .ep-btn2-inner {
+          min-width: 86px;
+          span {
+            font-size: 14px;
+            line-height: 14px;
+            color: #7B7B7B;
+          }
+        }
+      }
+      .ep-btn2:hover {
+        background-color: #F3F3F3;
+      }
+    }
+
+    .ep-close {
+      top: 15px;
+      right: 15px;
+      width: 9px;
+      height: 9px;
+      background: url("../../../assets/images//user/icon_img_close.png") no-repeat;
+      background-size: 9px 9px;
+    }
+  }
+}

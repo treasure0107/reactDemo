@@ -1,0 +1,31 @@
+/*
+ * handling.scss
+ */
+
+.ep-handling-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99999;
+  .ep-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    .ep-table-middle {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      // > div {
+      //   background: url(data:image/gif;base64,R0lGODlhWgBaAIABAP///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowZDcxMDdiMS02ZDYxLTQxNjktOGU3NS05ZTQ2MTM0NTZjODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MThFNDJBMTBGRjg0MTFFOEI3OERERUMyMURBNzU0MkYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MThFNDJBMEZGRjg0MTFFOEI3OERERUMyMURBNzU0MkYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5M2Y2OTA2MS05Y2ZhLTQxNDMtYjczZi0yZDlkMTY0N2I1NmEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MGQ3MTA3YjEtNmQ2MS00MTY5LThlNzUtOWU0NjEzNDU2Yzg2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8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);
+      //   background-repeat: no-repeat;
+      //   background-size: 90px 90px;
+      //   width: 90px;
+      //   height: 90px;
+      //   margin: 0 auto;
+      // }
+    }
+  }
+}

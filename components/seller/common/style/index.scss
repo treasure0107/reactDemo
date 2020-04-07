@@ -1,0 +1,242 @@
+.left-menu-welcome{
+    margin: 30px 0 0 0;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    background-color: $mainColor;
+    color: #fff;
+    text-indent: 40px;
+    font-weight: bold;
+    border-left: 2px solid $mainColor;
+    position: relative;
+    font: 12px/35px "microsoft yahei";
+    .arrow{
+        display: block;
+        border: 7px solid transparent;
+        border-right-color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+.no-bg-btn-title{
+    background: $bgColor!important;
+    color: $txtColor1!important;
+    float: right;
+}
+ .left-add-quickmenu{
+    padding: 10px 0 0 0;
+    display: block;
+    a{
+        width: 168px;
+        font-size: 12px;
+        line-height: 33px;
+        color: $txtColor1;
+        text-align: center;
+        display: block;
+        height: 33px;
+        border: solid 1px $mainColor;
+        border-right: 0;
+        box-shadow: 3px 3px 0 rgba(204,204,204,0.2);
+        text-indent: 40px;
+        text-align: left;
+        &:hover{
+            color:white;
+            background: $mainColor;
+        }
+    }
+}
+.deliver-goods-modal{
+    .ant-modal-footer{
+        border:none;
+        padding-top: 0;
+        padding-bottom: 24px;
+    }
+    .cancle-btn{
+        color: $txt_grey;
+        border-color: $txt_grey;
+        margin-left: 16px;
+    }
+}
+.change-money-modal{
+    .ant-modal-body{
+        max-height: 460px;
+        overflow: auto;
+        padding-right: 20px;
+    }
+}
+.right-content-page{
+    background: #fff;
+    padding: 20px 24px;
+}
+/*
+2019-08-07 by leite
+#root{
+    height: 100%;
+}*/
+.admin-modal-confirm{
+    padding: 0!important;
+    .content-box{
+        height: 100%;
+        width: 100%;
+    }
+}
+.seller-admin-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    .seller-admin-content-box{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .msg-box {
+        position: fixed;
+        right: 35px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+}
+// .left{
+//     float: left;
+// }
+// .right{
+//     float: right;
+// }
+.seller-error-box{
+    border-color: $auxiliaryColor!important;
+    &:hover{
+        border-color: #f25138!important;
+    }
+    &:active{
+        border-color: #f25138;
+        border-right-width: 1px !important;
+        outline: 0;
+        // -webkit-box-shadow: 0 0 2px rgba(230, 36, 15, 0.2);
+        // box-shadow: 0 0 2px rgba(230, 36, 15, 0.2);
+        box-shadow: 0 0 15px rgba(230, 36, 15, 0.2);
+    }
+}
+.seller-error-message{
+    color: $auxiliaryColor!important;
+}
+.before-require-content::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.textArea-limit-box{
+    position: relative;
+    .textArea-limit{
+        position: absolute;
+        right: 11px;
+        bottom: 8px;
+        font-size: 13px;
+        z-index: 10;
+        color: $txt_grey;
+    }
+  }
+  .ant-pagination-total-text{
+    margin: 0 8px;
+  }
+.seller-confirm-modal{
+    width: 520px!important;
+    .ant-modal-body{
+        padding: 0!important;
+    }
+    .anticon-question-circle{
+        display: none
+    }
+    .confirm-title{
+        padding: 16px 24px;
+        color: rgba(0, 0, 0, 0.65);
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+        border-radius: 4px 4px 0 0;
+    }
+    .confirm-body {
+        padding: 24px;
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+    }
+    // .confirm-footer {
+    //     padding: 10px 16px;
+    //     text-align: right;
+    //     background: transparent;
+    //     border-top: 1px solid #e8e8e8;
+    //     border-radius: 0 0 4px 4px;
+    // }
+    .ant-modal-confirm-btns{
+        padding: 10px 16px;
+        text-align: right;
+        background: transparent;
+        border-top: 1px solid #e8e8e8;
+        border-radius: 0 0 4px 4px;
+        width: 100%;
+        margin-top: 0!important;
+    }
+    .confirm-modal-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 700;
+        line-height: 1;
+        text-decoration: none;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+    }
+    .ant-modal-confirm-content{
+        margin: 0!important;
+    }
+    .confirm-modal-close-x {
+        display: block;
+        width: 56px;
+        height: 56px;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 56px;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+    }
+}
+.invoice-company-modal{
+    .ant-form-item{
+        margin-bottom: 14px;
+    }
+    .invoice-company-form{
+        .invoice-title{
+            color: $txt_grey_dark;
+            font-size: $fontSize3;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        .ant-form-item-label{
+            line-height: 1.5!important;
+        }
+        .ant-form-item-control{
+            line-height: 1.5!important;
+        }
+    }
+}

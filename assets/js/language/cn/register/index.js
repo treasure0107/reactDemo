@@ -1,0 +1,30 @@
+let languageObj = {
+  "registrationmobile":"手机号注册",
+  "registrationemail":"邮箱注册",
+  "existingaccount":"已有账号，",
+  "loginimmediately":"马上登录",
+  "welcometoregister":"欢迎注册用户，您的账户可登录旗下所有产品",
+  "setusername":"设置用户名",
+  "setpassword":"设置密码",
+  "registeredsuccessfully":"注册成功",
+  "email":"邮箱：",
+  "inputemail":"输入邮箱",
+  "validation":"验证：",
+  "readandagree":"我已阅读并同意",
+  "userregistrationprotocol":"《用户注册协议》",
+  "privacypolicy":"《隐私政策》",
+  "nextstep":"下一步",
+  "shutdown":"关闭",
+  "confirm":"确认",
+  "userregistrationprotocolmodal":"用户注册协议",
+  "privacypolicymodal":"隐私政策",
+  "mobilephone":"手机号：",
+  "inputmobilephone":"输入手机号",
+  "verificationcode":"验证码：",
+  "inputcode":"请输入验证码",
+  "passwordformat":"请输入6-16位密码",
+  "confirmpassword":"确认密码：",
+  "passwordisconsistent":"与上方密码相同"
+}
+
+export default languageObj

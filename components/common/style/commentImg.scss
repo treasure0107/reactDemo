@@ -1,0 +1,73 @@
+.comment_imgs_list{
+
+    .small_list{
+      overflow: hidden;
+      &:after{
+        contain: "";
+        clear:both;
+      }
+      li{
+        cursor: pointer;
+        background: #f3f3f3;
+        margin-right: 10px;
+        width: 56px;
+        height: 56px;
+        float: left;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 56px;
+        border:1px solid #fff;
+        &.tag{
+            border:1px solid #666;
+        }
+      }
+      img{
+        max-width: 48px;
+        max-height: 48px;
+      }
+    }
+
+    .imgShow_wrap{
+        width: 260px;
+        height: 260px;
+        background: #e5e5e5;
+        overflow: hidden;
+        text-align: center;
+        line-height: 260px;
+        position: relative;
+
+        img{
+            max-width: 80%;
+            max-height: 80%;
+            
+            transform: rotate(0deg);
+        }
+
+            .iconfont2{
+                cursor: pointer;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: #fff;
+                border-radius: 15px;
+                color: #7b7b7b;
+                text-align: center;
+                line-height: 30px;
+                position: absolute;
+                top:10px;
+                z-index: 22;
+                &.lft{
+                    left:20px;
+                }
+                &.rt{
+                    left:60px;
+                }
+                &.rotate{
+                    right: 20px;
+                }
+                &.disable{
+                    color: #f9f9f9;
+                }
+            }
+    }
+  }

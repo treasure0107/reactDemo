@@ -1,0 +1,44 @@
+.comment {
+  > li {
+    border-bottom: 1px solid $borColor;
+    padding: 10px 0;
+  }
+  .user {
+    margin-right: 20px;
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border: 1px solid $borColor;
+    }
+    p {
+      text-align: center;
+      &.time {
+        color: $txtColor3;
+      }
+    }
+  }
+  .main {
+    p {
+      margin-top: 10px;
+    }
+    .imglist {
+      img {
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+        border: 1px solid $borColor;
+        cursor: pointer;
+        &.act {
+          border: 1px solid $mainColor;
+        }
+      }
+    }
+    .sellcomment {
+      p {
+        text-align: right;
+        color: $txtColor1;
+      }
+    }
+  }
+}

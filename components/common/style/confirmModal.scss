@@ -1,0 +1,55 @@
+.confirmModal {
+  .ant-modal-close {
+    .ant-modal-close-x {
+      line-height: 40px;
+      height: 40px;
+      color: #ccc;
+    }
+  }
+  .ant-modal-header {
+    border-bottom: 0;
+    background-color: #f3f3f3;
+    padding: 12px 18px;
+    .ant-modal-title {
+      color: #999;
+      line-height: 16px;
+    }
+  }
+  .ant-modal-body {
+    text-align: center;
+    color: #333;
+    font-size: $fontSize2;
+    font-weight: bold;
+    padding: 28px 24px 18px 24px;
+  }
+  .ant-modal-footer {
+    border-top: 0;
+    padding-bottom: 21px;
+    text-align: center;
+    width: 100%;
+    .ant-btn {
+      width: 118px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      font-size: $fontSize2;
+      // &:first-child {
+      //   color: #666;
+      //   background-color: #ddd;
+      // }
+      &:last-of-type {
+        margin-left: 15px;
+      }
+    }
+    .ep-btn-hl-0 {
+      background-color: #c5c5c5;
+      color: #fff;
+      border-color: #c5c5c5;
+    }
+    .ep-btn-hl-1 {
+      background-color: #d13a26;
+      color: #fff;
+      border-color: #d13a26;
+    }
+  }
+}

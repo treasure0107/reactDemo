@@ -1,0 +1,230 @@
+.shop-sales-activity{
+    background: white;
+    padding:20px 24px;
+    overflow: hidden;
+    .couponeditor-search-form{
+        .ant-form-explain{
+            position: absolute;
+            width: 1000px;
+        }
+        .text-area-box{
+            .has-error{
+                height: 199px!important;
+            }
+        }
+        .has-error{
+            height: 59px;
+        }
+    }
+    .title-content{
+        color: $txt_grey_dark;
+        font-weight: bold;
+    }
+    .coupon-content-box{
+        width: 420px;
+        margin: 0 auto;
+    }
+    .small{
+        width: 210px!important;
+        .line-box{
+            margin-top: 24px!important;
+        }
+    }
+    .grey-coupon{
+        background-image: url($imageFilePath+'seller/img_mj.png')!important;
+        .main-content{
+            color:#B46C1C;
+        }
+        .tips-price{
+            color: #B46C1C;
+        }
+    }
+    .pink-coupon{
+        background-image: url($imageFilePath+'seller/img_mz.png')!important;
+        .main-content{
+            color:#E6240F;
+        }
+        .tips-price{
+            color: #E6240F;
+        }
+    }
+    .use_condition>div,.use_condition>label{
+        float: left;
+    }
+    .use_condition>label{
+        height: 40px;
+        line-height: 40px;
+    }
+    .use_condition{
+        .ant-form-item{
+            margin-bottom: 0
+        }
+    }
+    .coupon-content-detail{
+        text-align: center;
+        width: 260px;
+        float: left;
+        .coupon-style{
+            width: 160px;
+            height: 164px;
+            background: no-repeat 100% 100%;
+            padding-top: 22px;
+            border-radius: 4px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            .price-box{
+                width: 108px;
+                margin: 0 auto;
+                text-align: center;
+                .main-price{
+                    font-size: 24px;
+                    color: $mainColor;
+                    font-weight: bold;
+                }
+                .main-content{
+                    font-size: $fontSize3;
+                    color:#B46C1C;
+                }
+                .tips-price{
+                    color: #B46C1C;
+                }
+            }
+          .no-content{
+            width: 108px;
+            margin: 0 auto;
+            margin-top: 12px;
+            height: 56px;
+            .line-box{
+                margin: 0 auto;
+                margin-top: 30px;
+                width: 83px;
+                .no-content-line{
+                    width: 85px;
+                    background: linear-gradient(to right, #F9CD9C , #E7AC69);
+                    opacity:0.35;
+                    height: 6px;
+                    margin-top: 6px;
+                    &:first-child{
+                        margin-top: 0
+                    }
+                }
+            }
+          }
+        }
+        .coupon-introduce{
+            margin-top: 18px;
+            text-align: center;
+            color: $txt_grey_dark;
+        }
+    }
+    .apply-looking-detail{
+        color: $adminBlue
+    }
+    .ant-table-body{
+        font-size: $h5;
+    }
+    .ant-pagination-total-text{
+        float: right;
+    }
+    .list-detai-head{
+        height: 48px;
+        padding: 0 15px;
+        background: $adminPink;
+        margin-bottom: 20px;
+        .list-tips-box{
+            float: left;
+            color: $txt_grey_dark;
+            font-size: $h5;
+            margin-left: 25px;
+            height: 48px;
+            line-height: 48px;
+            text-align: left;
+            &:first-child{
+                margin-left: 0
+            }
+            div{
+                float: left;
+                margin-right: 4px;
+                &:last-child{
+                    margin-right: 0
+                }
+            }
+        }
+    }
+}
+.coupon-relations-box{
+    // overflow: hidden;
+    width: 700px;
+    // margin-bottom: 30px;
+    line-height: normal;
+    .disabled{
+        color: rgba(0, 0, 0, 0.25);
+        background-color: #f5f5f5;
+        cursor: not-allowed;
+        opacity: 1;
+    }
+    .title-content-relations{
+        height: 32px;
+    }
+    .error-box{
+        border-color: #ff9500!important;
+        &:hover{
+            border-color: #f25138!important;
+        }
+        &:active{
+            border-color: #f25138;
+            border-right-width: 1px !important;
+            outline: 0;
+            // -webkit-box-shadow: 0 0 2px rgba(230, 36, 15, 0.2);
+            // box-shadow: 0 0 2px rgba(230, 36, 15, 0.2);
+            box-shadow: 0 0 15px rgba(230, 36, 15, 0.2);
+        }
+    }
+    .select-right-box{
+        width:300px;float:left;border:solid thin $adminBorderColor;height:300px;margin-left:20px;
+        padding: 15px;
+        .tree-select-box{
+            overflow: auto;
+            height: 251px;
+            padding-right: 4px;
+        }
+        .dele-btn{
+            cursor: pointer;
+        }
+        .title-box{
+            width: 228px;
+            margin-right: 10px;
+            margin-bottom: 6px;
+        }
+    }
+    .select-left-box{
+        padding: 15px;
+        width:300px;float:left;border:solid thin $adminBorderColor;height:300px;
+        .needSearch{
+            height: 218px!important;
+        }
+        .tree-select-box{
+            height: 251px;
+            overflow: auto;
+            .ant-checkbox-wrapper{
+                display: block;
+                margin-left: 0;
+                line-height: 1.5;
+                .check-content{
+                    width: 240px;
+                    word-break:break-all;
+                }
+            }
+        }
+        .relations-select{
+            width: 78px;
+        }
+        .relations-search{
+            width: 180px;
+            margin-left: 8px;
+        }
+    }
+    .error-message{
+        color: #ff9500
+    }
+}

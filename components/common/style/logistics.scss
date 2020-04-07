@@ -1,0 +1,86 @@
+.logistics {
+  ul{
+    position: relative;
+  }
+  padding-left: 50px;
+  &.hen {
+    > ul {
+      padding: 0 50px;
+      position: relative;
+      li {
+        div {
+          display: inline-block;
+          margin-right: 15px;
+          &.modifyExpress {
+            font-size: 12px;
+            color: $mainColor;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .ant-timeline {
+    display: inline-block;
+    padding-top: 10px;
+  }
+  > ul {
+    padding: 0 50px;
+    li {
+      // margin-top: 6px;
+      padding-bottom: 3px;
+      div {
+        // margin-top: 6px;
+      }
+      > span {
+        display: inline-block;
+        vertical-align: top;
+      }
+      span {
+        font-size: $fontSize1;
+        color: $txtColor4;
+      }
+      p {
+        color: #bcbcbc;
+        font-size: $fontSize1;
+        margin-bottom: 5px;
+      }
+      .red {
+        color: $txtColor1;
+      }
+    }
+    .show {
+      cursor: pointer;
+      color: $txtColor1;
+    }
+    .ant-timeline {
+      margin-top: 10px;
+      > li:last-of-type {
+        .ant-timeline-item-tail {
+          height: 0;
+        }
+      }
+    }
+    .ant-timeline-item-head {
+      background: $borColor;
+      border: 1px solid $borColor;
+    }
+  }
+  .goodsImgDiv{
+    float: left;
+    margin-right: 16px;
+  }
+  .logtracking-li{
+    position: absolute;
+    top: 0;
+    left: 450px;
+    // float: right;
+    // margin-top: -68px;
+    // margin-right: 480px;
+  }
+  .goodsImgDiv img{
+    width: 90px;
+    height: 90px;
+  }
+}

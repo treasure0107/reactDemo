@@ -1,0 +1,34 @@
+.ep-image-preview {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 10000;
+  .ep-img {
+    .ep-img-inner {
+      width: 100vw;
+      height: 100vh;
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+  .ep-close {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #7B7B7B;
+    .ep-inner {
+      width: 20px;
+      height: 20px;
+      background: url("../../../assets/images//user/image_preview_close.png") no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+  .ep-close:hover {
+    background-color: #969696;
+  }
+}

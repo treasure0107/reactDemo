@@ -1,0 +1,56 @@
+.training-modal{
+  .level-title{
+    font-size: 16px;
+    color: #191919;
+  }
+  .level-ct{
+    font-size: 12px;
+    color: #7b7b7b;
+  }
+  .secondary-title{
+    font-size: 14px;
+    color: #191919;
+    margin-top: 15px;
+  }
+  .fully-title{
+    font-size: 12px;
+    color: #191919;
+    margin-top: 15px;
+  }
+  .ant-input{
+    width: 270px;
+  }
+  .ant-form-item-label{
+    float: left;
+    width: 80px;
+  }
+  .ant-form-item{
+    margin-bottom: 10px;
+  }
+  .train-modal-box{
+    border-top: 1px solid #E9E9E9;
+    margin-top: 50px;
+    padding-left: 160px;
+    padding-top: 26px;
+  }
+  .ant-form-explain{
+    padding-left: 0px;
+  }
+  .ant-btn-primary{
+    width: 180px;
+  }
+  .ant-form-item-control{
+    padding-left: 80px;
+  }
+  .ant-row{
+    margin-top: 10px;
+  }
+  .train-div{
+    position: absolute;
+    top: -42px;
+    height: auto;
+    margin-top: 0px;
+    left: 0;
+    width: 300px;
+  }
+}

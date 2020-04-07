@@ -1,0 +1,236 @@
+.shop-set-page{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .ant-tabs-bar{
+        margin: 0;
+        .ant-tabs-tab{
+            width: 128px;
+            height: 36px;
+            background: $adminDarkGray;
+            color: $txt_grey;
+            text-align: center;
+        }
+        // .ant-tabs-tab-active{
+        //     border:none!important;
+        // }
+    }
+    .base-Info-box{
+        padding: 24px;
+        background: #fff;
+        min-height: 511px;
+        .ant-upload-text{
+            font-size: 13px;
+        }
+        .ant-form-item{
+            margin-bottom: 14px;
+        }
+        .content-line-box{
+            display: flex;
+            justify-content: space-between;
+            height: 84px;
+            border-bottom: solid thin #e7e7e7;
+            align-items: center;
+            padding-right: 20px;
+            .content-detail{
+                flex-grow: 1;
+                display: flex;
+                padding-left: 50px;
+                align-items: center;
+                .title{
+                    color:$txt_grey_dark;
+                    font-weight: bold;
+                }
+                .content{
+                    color: $txt_grey;
+                    font-size: 13px;
+                }
+                .iconfont{
+                    font-size: 53px;
+                    margin: 0 25px;
+                }
+                .iconzhuanyepeixun{
+                    color: $adminBlue;
+                }
+                .iconshidirenzheng{
+                    color: #67D111;
+                }
+                .iconjinpaifuwu{
+                    color: #FEA802
+                }
+                .iconzhiliangbaozheng{
+                    color: $adminBlue;
+                }
+            }
+            .active{
+                color: $adminBlue!important;
+            }
+            .opreat-box{
+                display: flex;
+                align-items: center;
+                color:$txt_grey;
+                width: 200px;
+                justify-content: flex-end;
+                .ant-btn-primary{
+                    margin-left: 8px
+                }
+                .iconfont{
+                    color: #9A9999;
+                }
+            }
+        }
+        .tips-info{
+            font-size: $h5;
+            color: $txt_grey
+        }
+    }
+    .default-color{
+        color: $mainColor
+    }
+    .get-coordinate{
+        margin-left: 8px;
+        color: $adminBlue;
+        cursor: pointer;
+    }
+    .none-opreat{
+        cursor: not-allowed
+    }
+}
+.shop-loc-set-page{
+    padding: 24px;
+    background: #fff;
+    .ant-table-thead{
+       tr{
+           th{
+                background: $adminLightGray;
+                color:$txt_grey_dark;
+           }
+       }
+    }
+    .region-box{
+        display: flex;
+        color: $txt_grey_dark;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .iconfont{
+            margin: 0 2px 0 15px;
+        }
+        .iconfuzhi1{
+            margin-left: 0;
+        }
+    }
+    .table-second-data{
+        color: $adminBlue
+    }
+    .table-first-data{
+        color: $txt_grey_dark;
+        font-weight: bold;
+    }
+    .ant-table-row{
+        height: 84px;
+    }
+}
+.shop-set-modal{
+    // .ant-row{
+    //     margin-bottom: 10px;
+    // }
+    .ant-upload-text{
+        font-size: 13px;
+    }
+    .order-search-form{
+        .ant-row:first-child{
+           // background: red
+           .ant-col:first-child{
+               .ant-row{
+                    margin-bottom: 0!important;
+               }
+           }
+        }
+    }
+    .ant-form-item{
+        margin-bottom:10px;
+    }
+    .Qualifications-form{
+        .ant-form-item{
+            margin-bottom: 0!important;
+        }
+    }
+    .train-upload-box{
+        display: flex;
+        align-items: center;
+        .jump-to-train-box{
+            width: 300px;
+            font-size: 13px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            .jump-to-train{
+                color:$adminBlue;
+            }
+        }
+    }
+    .train-explain{
+        display: flex;
+        font-size: $h5;
+        color: $txt_grey;
+    }
+    .ant-upload{
+        width: 72px;
+        height: 72px;
+    }
+    .ant-modal-footer{
+        div{
+            display: flex;
+            justify-content: flex-end
+        }
+        .ant-btn-primary{
+            order: -1;
+            margin-right: 12px;
+        }
+    }
+    .ant-upload-list-picture-card .ant-upload-list-item{
+        width: 72px;
+        height: 72px;
+    }
+   .ant-btn{
+       width: 72px;
+       height: 28px;
+   }
+   .cus-service-title{
+       color: $txt_grey_dark;
+       font-size: 13px;
+   }
+   .cus-service-title-next{
+        font-size: $h5;
+        color: $txt_grey;
+   }
+}
+
+.shop-map-modal{
+    .shop-map-box{
+        position: relative;
+        #map_container{
+            width: 100%;
+            height: 300px;
+        }
+        .map-longitude-atitude{
+            color: $txt_grey_dark;
+            font-size: $h5;
+            margin-top: 12px;
+            span{
+                color: $mainColor
+            }
+        }
+    }
+}
+.severs-promise-box{
+    .line-box{
+        color: $txt_grey;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0
+        }
+    }
+}

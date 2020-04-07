@@ -1,0 +1,26 @@
+.goodsparams {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .name {
+        width: 80px;
+      }
+      .text {
+        > span {
+          margin-right: 5px;
+        }
+        > i {
+          margin-right: 5px;
+        }
+        >a{
+            color:$txtColor1;
+            margin-right: 5px;
+        }
+
+
+      }
+    }
+  }
+}

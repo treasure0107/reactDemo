@@ -1,0 +1,295 @@
+/*
+ * myboxlist.scss
+ */
+
+.myboxlist-item {
+  width: 150px;
+  height: 205px;
+  margin-bottom: 22px;
+  margin-right: 30px;
+  .ep-item-img {
+    border: 1px solid #FFF;
+    width: 148px;
+    height: 148px;
+    background-color: #E1E1E1;
+    .ep-item-img-inner {
+      width: 148px;
+      height: 148px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .ep-file-suffix {
+      width: 148px;
+      height: 148px;
+      top: 0px;
+      left: 0px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 500;
+        color: #FFF;
+      }
+    }
+    .ep-file-choose-icon {
+      top: 6px;
+      right: 7px;
+      width: 20px;
+      height: 20px;
+      background: url("../../../assets/images//user/my-file/file-choose-icon.png") no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+  .ep-item-img:hover {
+    border: 1px solid #D13A26;
+  }
+  .ep-item-img-active {
+    border: 1px solid #D13A26;
+  }
+  .ep-item-txt {
+    width: 150px;
+    height: 22px;
+    margin-top: 13px;
+    span {
+      width: 150px;
+      height: 14px;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 400;
+      color: #333;
+    }
+    .ep-item-txt-edit {
+      top: 0;
+      left: 0;
+      width: 148px;
+      height: 22px;
+      background-color: #FFF;
+      border: 1px solid #D13A26;
+    }
+  }
+  .ep-item-date-time {
+    width: 150px;
+    height: 9px;
+    margin-top: 4px;
+    span {
+      height: 9px;
+      font-size: 9px;
+      line-height: 9px;
+      font-weight: 400;
+      color: #BCBCBC;
+    }
+  }
+
+  .ep-hover-btns {
+    top: 0;
+    left: 0;
+    padding: 6px 5px;
+    width: 148px;
+    height: 34px;
+    .ep-item-delete {
+      width: 40px;
+      height: 22px;
+      background-color: #FFF;
+      margin-right: 4px;
+      border-radius: 2px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+    .ep-item-delete:hover {
+      span {
+        color: #D13A26;
+      }
+    }
+    .ep-item-rename {
+      width: 50px;
+      height: 22px;
+      background-color: #FFF;
+      margin-right: 4px;
+      border-radius: 2px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+    .ep-item-rename:hover {
+      span {
+        color: #D13A26;
+      }
+    }
+    .ep-item-download {
+      width: 40px;
+      height: 22px;
+      background-color: #FFF;
+      border-radius: 2px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+        color: #333;
+      }
+    }
+    .ep-item-download:hover {
+      span {
+        color: #D13A26;
+      }
+    }
+  }
+
+  .ep-edit-design {
+    top: 6px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    .ep-inner {
+      width: 20px;
+      height: 20px;
+      background: url("../../../assets/images//user/my_file_design_online_small.png");
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+    }
+    .ep-inner:hover {
+      background: url("../../../assets/images//user/my_file_design_online_small_active.png");
+    }
+  }
+  .ep-edit-design1 {
+    top: 112px;
+    left: 9px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.myboxlist-item-t1 {
+  width: 146px;
+  height: 266px;
+  padding-top: 12px;
+  margin-bottom: 42px;
+  box-sizing: border-box;
+  margin-right: 32px;
+  .ep-item-img {
+    width: 146px;
+    height: 220px;
+    box-sizing: border-box;
+    .ep-item-img-inner {
+      height: 218px;
+      vertical-align: bottom;
+      img {
+        max-width: 92%;
+        max-height: 92%;
+      }
+    }
+  }
+  .ep-item-txt {
+    width: 146px;
+    height: 24px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    span {
+      width: 146px;
+      height: 14px;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+}
+
+.myboxlist-item-t2 {
+  width: 140px;
+  height: 187px;
+  padding-top: 0px;
+  margin: 0 26px 17px 0;
+  .ep-item-img {
+    width: 140px;
+    height: 140px;
+    .ep-item-img-inner {
+      width: 138px;
+      height: 138px;
+      box-shadow: 0px 0px 10px 0px rgba(243,243,243,1);
+      background-color: #E1E1E1;
+      border: 1px solid #F3F3F3;
+      cursor: pointer;
+    }
+    .ep-file-suffix {
+      width: 138px;
+      height: 138px;
+    }
+    .ep-choose-before {
+      display: none;
+    }
+  }
+  .ep-item-img:hover {
+    .ep-choose-before {
+      display: block;
+      top: 6px;
+      right: 7px;
+      width: 20px;
+      height: 20px;
+      background-color: #FFF;
+      border-radius: 50%;
+      border: 1px solid #D13A26;
+    }
+  }
+  .ep-item-txt {
+    width: 140px;
+    margin-top: 15px;
+    height: 14px;
+    span {
+      width: 140px;
+      height: 14px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  .ep-item-date-time {
+    width: 140px;
+    margin-top: 5px;
+  }
+}
+
+.myboxlist-item-t3 {
+  width: 290px;
+  height: 308px;
+  background-color: #FFF;
+  margin: 0 13px 18px 0;
+  .ep-item-img {
+    width: 252px;
+    height: 235px;
+    margin-top: 18px;
+    .ep-item-img-inner {
+      width: 250px;
+      height: 233px;
+    }
+  }
+  .ep-item-img:hover {
+    border: 1px solid #FFF;
+  }
+  .ep-item-txt {
+    width: 252px;
+    margin-top: 13px;
+    span {
+      width: 252px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #7B7B7B;
+    }
+  }
+
+  .ep-edit-design {
+    top: 26px;
+    right: 27px;
+  }
+}
+.myboxlist-item-t3:hover {
+  box-shadow: 0px 13px 13px 0px rgba(209,209,209,1);
+}

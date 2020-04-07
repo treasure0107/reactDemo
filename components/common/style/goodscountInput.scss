@@ -1,0 +1,14 @@
+.goodscount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  .name {
+    width: 80px;
+  }
+  .text {
+    > span {
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+  }
+}

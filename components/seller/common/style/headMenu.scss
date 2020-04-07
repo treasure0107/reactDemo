@@ -1,0 +1,40 @@
+
+.main-menu-box {
+  display: flex;
+  flex-grow: 2;
+  // background:$mainColor;
+  li {
+    height: 60px;
+    position: relative;
+
+    a {
+      color: $txt_grey_dark;
+      //  font-size: $mainFontSize;
+      padding: 0 16px 0 15px;
+      width: 60px;
+      height: 60px;
+      @extend .flex-center;
+    }
+  }
+
+  .active {
+    a {
+      color: $mainColor !important;
+    }
+
+    background: white;
+    border-bottom: solid 3px $mainColor;
+  }
+
+  .se_purchase {
+    display: inline-block;
+    width: 43px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 19px;
+    right: -30px;
+    color: $mainColor;
+  }
+}

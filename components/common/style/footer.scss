@@ -1,0 +1,159 @@
+.footer {
+  background-color: $whiteColor;
+  border-top: 1px solid $borColor;
+  clear: both;
+  .footerheader {
+    border-bottom: 1px solid $borColor;
+    .li {
+      display: inline-block;
+      width: 25%;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      text-align: center;
+      span {
+        width: 46px;
+        height: 46px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid $mainColor;
+        text-align: center;
+        line-height: 40px;
+        font-size: $fontSize4;
+        color: $txtColor1;
+        margin-right: 14px;
+        font-weight: bold;
+        vertical-align: top;
+      }
+      .text {
+        display: inline-block;
+        width: 187px;
+        margin-top: -5px;
+        h3 {
+          text-align: left;
+          font-size: $fontSize2;
+          font-weight: bold;
+          color: #333;
+        }
+        p {
+          text-align: left;
+          font-size: $fontSize1;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+  .footnavli {
+    padding: 20px 0px 10px 0;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid $borColor;
+    overflow: hidden;
+    .qrcodegroup {
+      width: 280px;
+      .qrcode {
+        display: inline-block;
+        text-align: left;
+        margin-right: 12px;
+        img {
+          width: 86px;
+          height: 86px;
+          border: 1px solid $borColor;
+        }
+        h3 {
+          font-size: $fontSize3;
+          color: $txtColor4;
+          font-weight: bold;
+        }
+        p {
+          font-size: $fontSize1;
+          color: $txtColor3;
+          margin-top: 3px;
+          padding-left: 3px;
+        }
+      }
+    }
+    .w1200 {
+      padding: 0 40px;
+      text-align: center;
+    }
+    dl {
+      /*width: 183px;*/
+      width: 168px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+      dt {
+        margin-bottom: 12px;
+        color: $txtColor3;
+        font-size: $fontSize2;
+        font-weight: bold;
+        text-align: left;
+      }
+      dd {
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 5px;
+        text-align: left;
+        a {
+          font-size: 12px;
+          color: $txtColor3;
+          width: 100%;
+          &:hover {
+            color: $txtColor1;
+          }
+        }
+      }
+    }
+  }
+  .fotbotnav {
+    padding: 10px 0;
+    p {
+      text-align: center;
+      a {
+        color: $txtColor3;
+        display: inline-block;
+        margin-right: 31px;
+        position: relative;
+        font-size: 12px;
+        &:hover {
+          color: $txtColor1;
+        }
+        &:first-of-type {
+          &::after {
+            width: 0px;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 11px;
+          background-color: #bcbcbc;
+          top: 4px;
+          left: -17px;
+        }
+      }
+    }
+    .friendslink {
+      max-width: 630px;
+      margin: 0 auto;
+    }
+    .copyright {
+      color: $txtColor5;
+      margin-top: 10px;
+      font-size: 12px;
+      span {
+        color: $txtColor5;
+      }
+      a {
+        margin-right: 0;
+        color: $txtColor5;
+      }
+    }
+  }
+}

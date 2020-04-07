@@ -1,0 +1,118 @@
+.windowLogin{
+  .geetest_holder.geetest_wind .geetest_logo, .geetest_holder.geetest_wind .geetest_success_logo{
+    display: none !important;
+  }
+  .loginmethod{
+    .phoneForm{
+    width: 270px;
+    // text-align: center;
+    margin: 0 auto;
+    }
+    // padding-left: 30px;
+    .ant-row{
+      width: 270px !important;
+    }
+  }
+  .registernow{
+    float:right;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .enterregister{
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .forgotpassword{
+    float: right;
+    // margin-right: 20px;
+  }
+  .ant-tabs-ink-bar{
+    height: 0;
+  }
+  .ant-input{
+    height: 40px;
+  }
+  // .ant-modal-body{
+  //   max-height:400px !important;
+  // }
+  .geetest_holder.geetest_wind{
+    width: 270px !important;
+  }
+  .ant-tabs-bar{
+    border-bottom: none;
+  }
+  .ant-tabs-nav-container{
+    text-align: center;
+  }
+  .multimodelogin{
+    width: 200px;
+    margin: 0 auto;
+    padding: 0px 0 20px 0;
+    display: flex;
+    justify-content:space-between;
+  }
+  .loginImmediately {
+    width: 100%;
+    margin-top: 23px;
+    height: 40px;
+  }
+  .thirdparty_bg_qq{
+    background: url("../../../assets/images//login/qq.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100% 100%;
+  }
+  .thirdparty_bg_wx{
+    background: url("../../../assets/images//login/weixin.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100% 100%;
+  }
+  .thirdparty_bg_wb{
+   background: url("../../../assets/images//login/weibo.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 100% 100%;
+  }
+  .setpassword{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .setuplogin{
+    padding: 0 20px;
+  }
+  .phonegetcode {
+    height: 28px;
+    width: 108px;
+    border: none;
+    background: #f3f3f3;
+    cursor: pointer;
+    position: absolute;
+    top: -4px;
+    right: 3px;
+  }
+  .newStyle-box{
+    overflow: hidden;
+    padding: 0 45px;
+    padding-bottom: 10px;
+    .ml-wb-rt{
+      margin-right: 38px;
+    }
+  }
+  .newStyle-box div{
+    float: left;
+    margin-right: 10px;
+  }
+  .newStyle-box div:last-child{
+    margin-right: 0;
+  }
+}
+.windowbox{
+  .ant-modal-body{
+    max-height:480px !important;
+    padding: 10px;
+  }
+}

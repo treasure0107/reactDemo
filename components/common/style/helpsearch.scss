@@ -1,0 +1,35 @@
+.select_box{
+  position: absolute;
+  top:8px;
+  right: 0;
+  .helpsearch_ul{
+    overflow: hidden;
+  }
+  .helpsearch_ul li{
+    float: left;
+    width: 136px;
+    height: 40px;
+    background: #fff;
+    // color: #fff;
+    border: 1px solid #D1D1D1;
+    line-height: 40px;
+    text-align: center;
+    color: #191919;
+    // border-radius: 4px;
+    cursor: pointer;
+  }
+  .helpsearch_active{
+    background: #D13A26 !important;
+    color: #fff !important;
+    border: 1px solid #D13A26 !important;
+    border-radius: 0 !important;
+  }
+}
+.keywords-ul{
+  overflow: hidden;
+}
+.keywords-ul li{
+  float: left;
+  cursor: pointer;
+  padding: 0 12px;
+}

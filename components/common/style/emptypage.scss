@@ -1,0 +1,31 @@
+// 页面为空
+.emptypage {
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 46px;
+  background: $whiteColor;
+  img {
+    width: 170px;
+  }
+  p {
+    margin-top: 27px;
+    margin-bottom: 22px;
+    // font-weight: bold;
+    color: $txtColor5;
+    font-size: $fontSize2;
+  }
+  .btn {
+    width: 110px;
+    height: 36px;
+    background: rgba(248, 220, 215, 1);
+    border: 1px solid rgba(241, 135, 126, 1);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    margin: 0 auto;
+    color: $txtColor1;
+    font-weight: bold;
+    font-size: $fontSize2;
+    display: block;
+  }
+}

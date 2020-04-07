@@ -1,0 +1,188 @@
+/**
+ * preflightreport.scss
+ */
+
+.ep-preflight-report-pop-box {
+  .ant-modal-content {
+    width: 720px;
+    height: 503px;
+    background-color: #fff;
+    border-radius: 2px;
+    .ant-modal-body {
+      padding: 0;
+      max-height: 503px;
+      .ep-preflight-report-box {
+        .ep-box-split {
+          width: 640px;
+          height: 1px;
+          background-color: #E9E9E9;
+        }
+        .ep-box-btns {
+          margin-top: 20px;
+          padding: 0 40px;
+          height: 38px;
+          .ep-btn {
+            height: 38px;
+            padding: 13px 32px;
+            border-radius: 2px;
+            background-color: #60AC42;
+            span {
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: 400;
+              color: #FFF;
+            }
+          }
+          .ep-btn-download {
+            background-color: #60AC42;
+          }
+          .ep-btn-upload-again {
+            background-color: #7B7B7B;
+          }
+          .ep-btn-confirm-print {
+            background-color: #D13A26;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ep-preflight-report-box, .ep-preflight-report-box1 {
+  .ep-box-header {
+    height: 48px;
+    padding-top: 16px;
+    user-select: none;
+    span {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+      color: #191919;
+      display: block;
+    }
+    .ep-box-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 9px;
+      height: 9px;
+      background: url("../../../assets/images//user/icon_img_close.png") no-repeat;
+      background-size: 9px 9px;
+      cursor: pointer;
+    }
+  }
+  .ep-box-title-list {
+    margin-top: 13px;
+    margin-bottom: 20px;
+    height: 16px;
+    overflow: hidden;
+    padding: 0 40px;
+    > div {
+      span {
+        font-size: 16px;
+        line-height: 16px;
+        color: #191919;
+        font-weight: 500;
+      }
+    }
+    .ep-box-title-name {
+      margin-right: 20px;
+      span {
+        width: 196px;
+      }
+    }
+  }
+  .ep-box-table {
+    width: 720px;
+    table {
+      width: 720px;
+      height: 315px;
+      table-layout: fixed;
+      thead {
+        height: 38px;
+        background-color: #F3F3F3;
+        tr {
+          display: block;
+          th {
+            height: 38px;
+            padding: 0;
+            color: #7B7B7B;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+      tbody {
+        width: 100%;
+        height: 277px;
+        padding: 24px 0 0 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: block;
+        tr {
+          border-bottom-style: solid;
+          border-bottom-width: 24px;
+          border-bottom-color: #FFF;
+          height: 12px;
+          td {
+            word-wrap: break-word;
+            word-break: break-all;
+            height: 12px;
+            vertical-align: text-top;
+            padding: 0;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #7B7B7B;
+            pre {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .ep-tbl-cell0 {
+        width: 40px;
+      }
+      .ep-tbl-cell1 {
+        width: 93px;
+      }
+      .ep-tbl-cell2 {
+        width: 122px;
+      }
+      .ep-tbl-cell3 {
+        width: 175px;
+      }
+      .ep-tbl-cell4 {
+        width: 74px;
+      }
+      .ep-tbl-cell5 {
+        width: 180px;
+      }
+      td.ep-tbl-cell5 {
+        color: #191919;
+      }
+      td.ep-tbl-cell-WARNING {
+        color: #F38C11;
+      }
+      td.ep-tbl-cell-ERROR {
+        color: #D13A26;
+      }
+      td .ep-tbl-cell-pass {
+        background: url("../../../assets/images/ep_tbl_cell_pass.png");
+        background-repeat: no-repeat;
+        background-size: 15px 10px;
+        width: 15px;
+        height: 10px;
+      }
+    }
+  }
+}
+.ep-preflight-report-box1 {
+  width: 720px;
+  table {
+    tbody {
+      height: auto !important;
+    }
+  }
+}

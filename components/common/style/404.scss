@@ -1,0 +1,40 @@
+.warp-404{
+  background-color: #fff;
+  height: 100vh;
+  min-height: 800px;
+}
+.box-404{
+  .fl{
+    width: 255px;
+    height: 299px;
+    background: url("../../../assets/images//404/img1.png") no-repeat;
+    margin-top: 288px;
+    margin-left: 200px;
+    margin-right: 120px;
+  }
+  .fr{
+    float: left;
+    margin-top: 380px;
+    p{
+      margin-bottom: 10px;
+    }
+    .big-text{
+      span{
+        color: $mainColor;
+        font-size: 36px;
+        margin-right: 12px;
+      }
+
+      font-size: 18px;
+      color: $txtColor4;
+      font-weight: bold;
+    }
+    .btn{
+      color: $mainColor;
+      font-size: 18px;
+      cursor: pointer;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  }
+}

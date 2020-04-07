@@ -1,0 +1,96 @@
+.user-title .tabs {
+  height: 27px;
+  float: left;
+  width: 100%;
+}
+.user-title .tabs li {
+  float: left;
+  line-height: 27px;
+  @include border_default("bottom", $mainColor, 0px);
+}
+.user-title .tabs li.fr {
+  float: right;
+  border-right: 1px solid #d1d1d1;
+  // background: #fff !important;
+  // border: none !important;
+  a {
+    // color: #7b7b7b !important;
+    // padding-right: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 1px;
+      height: 12px;
+      background: none;
+    }
+  }
+}
+.user-title .tabs li.fr a:hover{
+  // color: #f25138 !important;
+}
+.user-title .tabs li.active {
+  @include border_default("bottom", $mainColor, 2px);
+  // padding-bottom: 4px;
+}
+.user-title .tabs li a {
+  font-size: 14px;
+  color: $txtColor3;
+  padding: 0 12px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 1px;
+    height: 12px;
+    background: $bgColor3;
+  }
+}
+.userTitltBg .tabs li a {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 0;
+    height: 12px;
+    background: $bgColor3;
+  }
+}
+.user-title .tabs li:first-of-type a {
+  &::after {
+    background: none;
+  }
+}
+
+.user-title .tabs li:hover a,
+.user-title .tabs li.active a {
+  color: $txtColor1;
+  // font-size: $fontSize3;
+}
+
+
+.userTitltBg .tabs li{
+  // background: linear-gradient(0deg, #e9e9e9, white);
+  border: 1px solid #D1D1D1;
+  border-right: none;
+}
+
+.userTitltBg .tabs li:last-child{
+  border-right: 1px solid #d1d1d1;
+  border-left: none;
+}
+.userTitltBg .tabs li:nth-last-child(2){
+  border-right: 1px solid #D1D1D1;
+}
+.userTitltBg .tabs li.active{
+  background: #D13A26;
+  // background: linear-gradient(0deg, #d13a26, #eb7b6a);
+  border: 1px solid #D13A26;
+}
+.userTitltBg .tabs li.active a{
+  color: #fff;
+}

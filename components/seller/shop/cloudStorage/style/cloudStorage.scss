@@ -1,0 +1,176 @@
+.statusTop {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #E9E9E9;
+  &.detailTop {
+    padding-bottom: 10px;
+    .title {
+      line-height: 32px;
+    }
+  }
+  .title {
+    font-size: 16px;
+    line-height: 16px;
+    color: #666;
+  }
+  .apply {
+    font-size: 14px;
+    line-height: 15px;
+    color: #559F51;
+    cursor: pointer;
+  }
+  .btnStyle {
+    width: 108px;
+    height: 32px;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    border-radius: 16px;
+  }
+}
+
+.cloudStorage {
+  .blueStyle {
+    color: #5288F5;
+  }
+  .cloudAccount {
+    .accountContent {
+      padding: 46px 0 115px 95px;
+      border-bottom: 2px dashed #E9E9E9;
+      .ant-input[disabled] {
+        color: rgba(0, 0, 0, 0.65);
+        background-color: #F3F3F3;
+      }
+      .ant-form-item {
+        display: block;
+        margin-bottom: 16px;
+        &:last-of-type {
+          margin-bottom: 30px;
+        }
+        .ant-form-item-label {
+          width: 77px;
+        }
+        .ant-input {
+          width: 270px;
+          height: 36px;
+          border-radius: 0;
+          &.verifyCode {
+            width: 126px;
+            margin-right: 8px;
+          }
+        }
+        .ant-btn {
+          border-radius: 0;
+        }
+        .explain {
+          color: #999;
+          margin-left: 18px;
+        }
+      }
+      .applyBtn {
+        margin-left: 77px;
+        width: 270px;
+        height: 40px;
+      }
+      .sendCodeBtn {
+        width: 136px;
+        height: 36px;
+        color: #999;
+        padding: 0;
+        border-color: #eee;
+        cursor: not-allowed;
+        &.active {
+          border: 1px solid #5288F5;
+          color: #5288F5;
+          cursor: pointer;
+        }
+        .second {
+          color: #5288F5;
+          margin-right: 4px;
+        }
+      }
+      .verifyBtn {
+        .ant-form-item-control-wrapper {
+          height: 44px;
+        }
+      }
+    }
+  }
+  .accountDetail {
+    .acctountDetailContent {
+      color: #191919;
+      padding: 59px 0 87px 55px;
+      border-bottom: 2px dashed #E9E9E9;
+      .item {
+        font-size: 14px;
+        line-height: 15px;
+        &:not(:last-of-type) {
+          margin-bottom: 41px;
+        }
+        .label {
+          width: 94px;
+          padding-right: 20px;
+          text-align: right;
+        }
+        .line {
+          color: #999;
+          padding: 0 17px;
+        }
+        .reBind {
+          color: $mainColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .cloudStorageDesc {
+    font-size: 14px;
+    color: #999999;
+    padding: 41px 0 84px 94px;
+    p {
+      &:first-of-type {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .introduction {
+    padding: 42px 0 35px 61px;
+    line-height: 24px;
+    .introLabel {
+      color: $mainColor;
+      width: 88px;
+    }
+    .introContent {
+      width: 740px;
+      color: #999;
+    }
+  }
+}
+
+.cloudStorageModal {
+  .ant-modal-body {
+    padding: 26px 23px 30px;
+    .modalMain {
+      .title {
+        font-size: 18px;
+        color: #559F51;
+        line-height: 18px;
+        margin-bottom: 20px;
+        &.blackTitle {
+          color: #191919;
+        }
+      }
+      .content {
+        color: #7B7B7B;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 21px;
+      }
+      .ant-btn {
+        width: 86px;
+        height: 30px;
+        font-size: 14px;
+        color: #559F51;
+        border-color: #559F51;
+      }
+    }
+  }
+}

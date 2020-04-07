@@ -1,0 +1,347 @@
+.hometopnav {
+  width: 100%;
+  background: $bgColor2;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  // @include border_default("top", $borColor2);
+  .mg {
+    position: relative;
+  }
+  .left {
+    width: 232px;
+    float: left;
+    overflow: hidden;
+    img {
+      width: 169px;
+      height: 60px;
+      margin-top: 5px;
+    }
+  }
+  .search {
+    margin-top: 8px;
+    float: left;
+  }
+  .topurchase{
+    float: left;
+    margin-top: 8px;
+    display: block;
+    width: 124px;
+    height: 40px;
+    line-height: 36px;
+    float: left;
+    border: 2px solid #F1877E;
+    margin-right: 8px;
+    text-align: center;
+    color: $txtColor1;
+    font-weight: bold;
+    img{
+      margin-right: 9px;
+      vertical-align: -2px;
+    }
+  }
+  .shopcar {
+    margin-top: 8px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    position: relative;
+    .icon_cart {
+      color: $mainColor;
+      font-size: 18px;
+      &.icon_cart_nano {
+        font-size: 24px;
+        color: $txtColor3;
+      }
+    }
+    .cart_border {
+      display: block;
+      color: $mainColor;
+    }
+    .ant-badge-count {
+      box-shadow: none;
+    }
+    &:hover {
+      .cart_border {
+        // border-bottom: 1px solid $whiteColor;
+      }
+      .cart_top {
+        display: block;
+      }
+    }
+    .cart_border {
+      cursor: pointer;
+      position: relative;
+      background-color: $whiteColor;
+      z-index: 3;
+      border: 2px solid #F1877E;
+    }
+
+    img {
+      margin: 0 3px;
+      color: $txtColor1;
+      vertical-align: middle;
+      margin-top: -3px;
+      margin-left: -6px;
+    }
+    .name {
+      margin: 0 8px;
+      color: $txtColor1;
+      font-weight: bold;
+    }
+    .ant-badge {
+      vertical-align: middle;
+      margin-left: 10px;
+      margin-top: -4px;
+      // position: absolute;
+      // top: 11px;
+    }
+
+    .cart_top {
+      display: none;
+      .fix_cont{
+        max-height: 300px;
+        overflow-y: auto;
+      }
+
+      width: 300px;
+      position: absolute;
+      right: 0;
+      top: 39px;
+      font-size: 12px;
+      // @include border_default("", $borColor);
+      border: 2px solid $mainColor;
+      background: $whiteColor;
+      z-index: 99; /*by leite 2->99*/
+
+      .no_tip_txt {
+        text-align: center;
+        width: 100%;
+        .icon_cart {
+          font-size: 30px;
+          color: #666;
+        }
+        a {
+          display: none;
+        }
+      }
+      .cart_item {
+        padding: $gap_base;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px dashed $borColor;
+        &:last-child {
+          border-bottom: none;
+        }
+        .pric_desc {
+          flex: 1;
+          display: flex;
+          text-align: left;
+          align-items: center;
+          .desc {
+            width: 100px;
+            padding-right: 10px;
+            @include txt(3);
+            line-height: 20px;
+          }
+          .ant-input-number {
+            display: inline-block;
+            width: 50px;
+          }
+          .price_wrap {
+            text-align: right;
+            display: flex;
+            flex: 1;
+            padding-left: 14px;
+            flex-direction: column;
+            line-height: 22px;
+            .del {
+              cursor: pointer;
+              @include aHover;
+            }
+            .price {
+              font-weight: bold;
+            }
+          }
+        }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        &:hover {
+          background-color: $bgColor;
+        }
+      }
+
+      .cart_handler {
+        background-color: $bgColor;
+        display: flex;
+        text-align: left;
+        padding: 4px 10px;
+        .flex {
+          flex: 1;
+          .shop_num {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+.hometopnavfix {
+  position: fixed;
+  top: -200px;
+  width: 1px;
+  z-index: 10;
+  width: 100%;
+  background: $bgColor2;
+  align-items: center;
+  transition: top 0.3s ease-out;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px -2px rgba(233, 233, 233, 0.7);
+  @include clearfix();
+  .left {
+    img {
+      width: 136px;
+      height: 48px;
+      margin-top: 4px;
+      margin-left: 0;
+    }
+  }
+  .search {
+    margin-right: 40px;
+    .form {
+      input {
+        width: 520px;
+      }
+    }
+  }
+
+  .mg {
+    align-items: center;
+  }
+  .login {
+    width: 130px;
+    float: left;
+    margin-top: 17px;
+    span {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+  .categorylist {
+    float: left;
+    margin-top: 7px;
+  }
+  // .shopcar {
+  //   cursor: pointer;
+  //   position: relative;
+  //   margin-top: 17px;
+  //   width: 20px;
+  //   height: 22px;
+  //   line-height: 1;
+  //   float: left;
+  //   img {
+  //     width: 20px;
+  //     height: 22px;
+  //   }
+  //   > span {
+  //     position: absolute;
+  //     right: -3px;
+  //     top: 2px;
+  //     text-align: center;
+  //   }
+  // }
+  &.show {
+    top: 0;
+  }
+}
+
+.search {
+  margin-top: 30px;
+  margin-left: 36px;
+  margin-right: 50px;
+  flex: 1;
+  .form {
+    min-width: 598px;
+    height: 40px;
+    margin-bottom: 5px;
+    @include clearfix();
+    .ant-select-show-search {
+      float: left;
+      width: 409px;
+      height: 40px;
+      line-height: 38px;
+      .ant-select-selection__placeholder {
+        height: 40px;
+        line-height: 40px;
+        top: 0;
+        margin-top: 0;
+      }
+      input {
+        width: 409px;
+        height: 40px;
+        float: left;
+        @include border_default("", $borColor1, 2px);
+        padding-left: 10px;
+        border-radius: 0;
+      }
+    }
+    .btn {
+      border: 0;
+      width: 90px;
+      height: 40px;
+      line-height: 40px;
+      background-color: $bgColor1;
+      color: $txtColor2;
+      font-size: $fontSize2;
+      cursor: pointer;
+      float: left;
+      outline: 0;
+      text-align: center;
+    }
+    .button-store {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 1px;
+        height: 8px;
+        background: $txtColor2;
+        margin-top: -4px;
+      }
+      // background-color: #b31919;
+    }
+  }
+  p {
+    padding-left: 17px;
+    .keywords {
+      margin-right: 10px;
+      font-size: $fontSize1;
+      color: $txtColor3;
+      cursor: pointer;
+    }
+  }
+}
+.ant-select-dropdown {
+  border-radius: 2px!important;
+  .ant-select-dropdown-menu-item:first-child{
+    border-radius: 2px 2px 0 0!important;
+  }
+  .wordli {
+    .text {
+      u {
+        color: $txtColor1;
+      }
+    }
+  }
+  .ant-select-dropdown-menu-item-active{
+    background-color: $bgColor!important;
+  }
+}

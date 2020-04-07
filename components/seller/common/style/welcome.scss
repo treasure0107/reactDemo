@@ -1,0 +1,229 @@
+
+
+.seller-welcome-page{
+    .banner-img{
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    .head-box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .head-left-detail{
+            display: flex;
+            background: #fff;
+            width: 746px;
+            height: 166px;
+            padding: 23px;
+            border-radius: 4px;
+            .user-icon{
+                width: 120px;
+                height: 120px;
+                margin-right: 16px;
+            }
+            .content-box-welcome{
+                flex-grow: 1;
+                .user-detail-box{
+                    display: flex;
+                    justify-content: space-between;
+                    .detaile-title-box{
+                        .title{
+                            color: $txt_grey_dark;
+                            font-size: 18px;
+                            margin-bottom: 8px;
+                        }
+                        .last-lgoin-time{
+                            font-size:$h5;
+                            color: $txt_grey;
+                        }
+                    }
+                    .user-type-box{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 242px;
+                        .type-box{
+                            div:nth-child(1){
+                                color: $txt_grey;
+                                font-size: $h5
+                            }
+                            div:nth-child(2){
+                                color: $txt_grey_dark;
+                                font-size: 13
+                            }
+                        }
+                    }
+                }
+                .user-service-box{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 18px;
+                    .service-content{
+                        div:nth-child(1){
+                            display: flex;
+                            align-items: center;
+                            .iconfont{
+                                color: #BCBCBF;
+                                margin-right: 2px;
+                             }
+                            color: $txt_grey;
+                        }
+                        div:nth-child(2){
+                            text-align: center;
+                            color: $adminBlue;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .head-right-detail{
+            padding: 12px;
+            background: #fff;
+            width: 264px;
+            margin-left: 15px;
+            .right-content-box{
+                color: $txt_grey_dark;
+                display: flex;
+                &:last-child(){
+                    .detail-box{
+                        border-bottom: none;
+                        padding-top: 4px;
+                    }
+                }
+                .icon-box{
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 8px;
+                }
+                .detail-box{
+                    width: 202px;
+                    border-bottom: solid thin $adminBorderColor;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .content-box{
+           // display: flex;
+            margin-top: 15px;
+            section{
+                margin-right: 16px;
+            }
+        }
+        .needBorder{
+            section{
+                position: relative;
+                &::after{
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    left: (100% + 3);
+                    width: 1px;
+                    height: 100%;
+                    background-color: $mainColor;
+                }
+            }
+        }
+        div:nth-child(3){
+            .content-box{
+               span{
+                    margin-left: 10px;
+               }
+            }
+        }
+    }
+    .goods-Prompt-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        background: #fff;
+        padding: 15px 25px;
+        border-radius: 4px;
+        section{
+            width: 160px;
+            height: 40px;
+            background: $adminPink;
+            cursor: pointer;
+            @extend .flex-center;
+            color: $txt_grey_dark;
+            span{
+                margin-left: 10px;
+                color: $txtColor1;
+            }
+        }
+    }
+    .statistics-box{
+        display: flex;
+        justify-content: space-between;
+        .count-line-box{
+            margin-top: 26px;
+            display: flex;
+            justify-content: space-between;
+            &:first-child(){
+                margin-top: 0;
+            }
+            .count-content-box{
+                flex-grow: 1;
+                .title{
+                    color: $txt_grey;
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: center;
+                    .iconfont{
+                        margin-right: 4px;
+                    }
+                }
+                .count-detail{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 182px;
+                    font-size: 13px;
+                    div:nth-child(1){
+                        span{
+                            color: $txt_grey_dark;
+                            font-size: $fontSize4;
+                            margin-right: 4px;
+                        }
+                    }
+                    div:nth-child(2){
+                        span{
+                            color: $txt_grey_dark;
+                            font-size: $fontSize4;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+                .today-count{
+                    div:nth-child(1){
+                        span{
+                            color: $adminBlue;
+                            font-size: $fontSize4;
+                            margin-right: 4px;
+                        }
+                    }
+                    div:nth-child(2){
+                        span{
+                            color: $mainColor;
+                            font-size: $fontSize4;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .sell-count-box{
+            width: 336px;
+            background: #fff;
+            padding: 24px;
+        }
+        .count-statistics-box{
+            width: 674px;
+            background: #fff;
+            padding: 24px;
+        }
+    }
+}

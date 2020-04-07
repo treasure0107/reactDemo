@@ -1,0 +1,85 @@
+// 验证滑块
+.slideVerify {
+  position: relative;
+  width: 100%;
+  // height: 100%;
+  height: 36px;
+  border-radius: 2px;
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea; /*no*/
+  color: #6b6b6b;
+  box-sizing: border-box;
+  font-size: 28px;
+  line-height: 36px;
+  .dragbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background: url('../../../assets/images/slider_icon.png') no-repeat center center;
+    background-color: #fff;
+    background-size:14px;
+    &.succIcon {
+      width: 36px;
+      height: 100%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      background: url('../../../assets/images/verify_succ.png') no-repeat center center;
+      background-color: #fff;
+      background-size: 50px;
+    }
+  }
+  .txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    &.succColor {
+      color: #fff;
+    }
+  }
+  .successBg {
+    background-color: #59D969;
+    width: 0;
+    height: 100%;
+  }
+}
+
+// 头部
+.appHeader {
+  position: relative;
+  width: 100%;
+  height: 88px;
+  overflow: hidden;
+  padding: 28px 30px;
+  box-sizing: border-box;
+  color: #333;
+  .closeIcon {
+    float: left;
+    width: 30px;
+    height: 30px;
+  }
+  .backIcon {
+    float: left;
+    width: 36px;
+    height: 36px;
+  }
+  .right {
+    float: right;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    line-height: 30px;
+  }
+}

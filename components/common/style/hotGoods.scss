@@ -1,0 +1,61 @@
+.hot_goods{
+    padding:0 30px;
+    background: #fff;
+    .tit{
+        color: #7b7b7b;
+        font-size: 16px;
+        padding:30px 0;
+    }
+    .slide_items{
+        float: left;
+        width: 210px;
+        margin-right: 23px;
+        height: 324px;
+        background: #fff;
+        color: #7b7b7b;
+        .desc{
+            padding:0 10px; 
+            font-size: 12px;
+            .price{
+             font-size: 16px;
+             color: $mainColor;  
+             margin-bottom: 20px;
+             .label{
+                 color: #fff;
+                 font-size: 12px;
+                 display: inline-block;
+                 transform: scale(0.9);
+                 padding:0 4px;
+                 border-radius: 4px;
+                 background: #4ea157;
+             }
+            }
+           .name{
+            text-overflow: ellipsis;
+            word-break: keep-all;
+            overflow: hidden;
+            margin-bottom: 4px;
+            white-space: nowrap;
+           }
+        }
+        .sell_count{
+            margin-right: 16px;
+        }
+        &:hover{
+            box-shadow:0px 6px 12px 0px rgba(233,233,233,1);
+        }
+        
+
+        .imgs_wrap{
+            width: 210px;
+            height: 210px;
+            line-height: 210px;
+            margin-bottom: 16px;
+            text-align: center;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}

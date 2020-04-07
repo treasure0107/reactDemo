@@ -1,0 +1,375 @@
+.home-set-page {
+  .clear {
+    clear: both;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .ant-tabs-bar {
+    margin: 0;
+  }
+
+  .status-content {
+    font-size: 14px;
+    font-weight: bold;
+    color: #999999;
+    background-color: #fff;
+    margin-bottom: 3px;
+    padding: 24px;
+
+    .line {
+      background: #999999;
+      width: 3px;
+      height: 14px;
+      float: left;
+      margin-top: 4px;
+      margin-right: 8px;
+    }
+
+    .content {
+      font-size: 14px;
+      font-weight: bold;
+      float: left;
+      color: #999999;
+    }
+
+    .status-c {
+      font-size: 12px;
+      font-weight: normal;
+      margin-left: 16px;
+    }
+
+    .status-t {
+      cursor: pointer;
+      color: #3B88FD;
+    }
+
+    .status-con {
+      margin-top: 16px;
+
+      .icon-s {
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .from-title {
+    .price-unit {
+      color: $mainColor;
+      font-weight: bold;
+    }
+
+    .title-content {
+      margin: 8px 11px 0 0 !important;
+    }
+
+    .introduce {
+      margin-top: 9px;
+      display: inline-block;
+
+      .baoprice {
+        color: #EF3C2C;
+      }
+
+      .unit {
+        display: inline-block;
+        margin: 0 5px;
+        color: $titleContentColor;
+        font-size: $h5;
+
+        .unit-p {
+          color: #191919;
+        }
+      }
+
+      // .unit-next{
+      //     color: $titleContentColor;
+      //     font-size: $h5;
+      // }
+    }
+  }
+
+  .offer-Info-box {
+    padding: 24px;
+    background: #fff;
+    min-height: 511px;
+    position: relative;
+
+
+    .ant-table {
+      font-size: $h5;
+      color: #191919;
+
+      .sub-btn-table {
+        display: inline-block;
+        width: 69px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        color: $mainColor;
+        font-size: $h5;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .sub-btn-table:hover {
+        color: #fff;
+        background-color: $mainColor;
+      }
+    }
+
+    .offer-status-success {
+      color: $adminBlue;
+    }
+
+    .offer-status-error {
+      color: $mainColor;
+    }
+
+    .offer-sub-form {
+      .sub-btn {
+        margin-bottom: 10px;
+        margin-left: 50px;
+        width: 170px;
+        height: 40px;
+        padding: 0;
+      }
+
+      .sub-btn-o {
+        width: 100px;
+        height: 36px;
+        padding: 0;
+        margin-left: 10px;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+        border-radius: 36px;
+      }
+
+      .sub-btn-c {
+        width: 170px;
+        height: 40px;
+        padding: 0;
+        margin-left: 10px;
+        //border: 1px solid #ddd;
+      }
+
+      .del-url {
+        color: #999;
+        margin-left: 10px;
+      }
+
+      .title-content-box {
+        margin-bottom: 38px;
+      }
+
+      .title-content {
+        margin-bottom: 15px;
+
+        .line {
+          background: #999999;
+          width: 3px;
+          height: 14px;
+          float: left;
+          margin-top: 4px;
+          margin-right: 8px;
+        }
+
+        .content {
+          font-size: 14px;
+          font-weight: bold;
+          float: left;
+          color: #999999;
+
+        }
+      }
+
+
+      .line-b {
+        width: 100%;
+        height: 3px;
+        background-color: #ccc;
+      }
+
+
+      .ant-form-explain {
+        font-size: $h5 !important;
+        width: 1000px;
+        position: absolute;
+      }
+
+      .offer-info {
+        width: 700px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .offer-info-content {
+          font-size: $h5;
+          width: 33%;
+          color: #191919;
+          float: left;
+
+          .info-title {
+            float: left;
+            width: 67px;
+            text-align: right;
+          }
+
+          .info-content {
+            float: left;
+            width: 156px;
+            word-wrap: break-word;
+          }
+        }
+      }
+
+      .offer-dec {
+        margin-left: 50px;
+
+        .offer-dec-content {
+          color: $txt_grey_dark;
+          overflow: hidden;
+          margin-bottom: 11px;
+          font-size: $h5;
+
+          .dec-title {
+            float: left;
+          }
+
+          .dec-content {
+            float: left;
+            width: 556px;
+            word-break: break-all;
+
+            .pic {
+              width: 80px;
+              height: 80px;
+              margin-right: 12px;
+              margin-bottom: 8px;
+            }
+
+            .file-list {
+              div {
+                cursor: pointer;
+              }
+            }
+
+            .explain-text {
+              color: $mainColor;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+
+      .type-remark {
+        padding-top: 8px;
+      }
+
+      .file-box {
+        color: $adminBlue;
+      }
+    }
+  }
+
+}
+
+.offer-table {
+  .ant-table-thead {
+    tr {
+      th:last-child {
+        .ant-table-header-column {
+          padding-left: 9px;
+        }
+      }
+    }
+  }
+}
+
+.purchase-list {
+  position: relative;
+
+  .grab-btn {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    font-size: 12px;
+    color: #3B88FD;
+    z-index: 666;
+  }
+
+  .purchase-con {
+    .purchase-upload {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+
+      .ant-upload {
+        padding: 3px;
+      }
+
+      .ant-upload.ant-upload-select-picture-card {
+        width: 60px;
+        height: 30px;
+        border: 1px solid #ddd;
+      }
+    }
+
+    .purchase-url {
+      position: relative;
+      top: 9px;
+      color: $adminBlue;
+      cursor: pointer;
+    }
+
+    .del {
+      position: relative;
+      top: 9px;
+      cursor: pointer;
+      margin-left: 30px;
+      color: $mainColor;
+    }
+  }
+}
+
+.rulePurchaseModal {
+  .ant-modal-content {
+    border-radius: 0;
+  }
+
+  .ant-modal-close-x {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rule-con {
+    max-height: 520px;
+    overflow: auto;
+  }
+
+  .ant-modal-title {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .ant-modal-body {
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ant-modal-footer {
+    display: none;
+  }
+}

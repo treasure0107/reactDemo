@@ -1,0 +1,31 @@
+let languageObj = {
+  "plsChoose": "请选择",
+  "dePrintFile": "的文件",
+  "iChooseOk": "我选好了",
+  "designNow": "马上在线设计",
+  "noPrintFileAvailable": "您还没有文件",
+  "noPrintFileAvailableDesc": "为您提供多种品类的品设计模版，可快速修改文字与图片",
+  "choosePrintFileFirst": "请选择需要的文件",
+  "hdPreview": "高清预览",
+  "payForDownload": "付费下载",
+  "fileRenderingText1": "您设计的 ",
+  "fileRenderingText2": " 正在渲染PDF格式的高清文件，请稍等…",
+  "fileRenderOk": "高清文件渲染完成！",
+  "paymentInfo1": "渲染与下载PDF高清文件单价",
+  "paymentInfo2": "元/P，当前PDF文件共",
+  "paymentInfo3": "P，需微信扫码支付",
+  "paymentInfo4": "元",
+  "tbzOnlineDesign": "微创印在线设计",
+  'tbzP4PLoginTitle': '您尚未登录...',
+  'tbzP4PLoginTitle1': '账号登录',
+  'tbzP4PLoginTitle2': '您已登录',
+  "ok": "确定",
+  'tbzP4PLoginTextPlaceHolder': '手机号/邮箱/用户名',
+  'tbzP4PLoginPasswordPlaceHolder': '密码',
+  'tbzP4PLoginNow': '立即登录',
+  'tbzP4PLoginForgetPassword': '忘记密码',
+  'tbzP4PLoginRegister': '立即注册',
+  "plsInputUsernameOrPassword": "账号或密码为空"
+}
+
+export default languageObj;

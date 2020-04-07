@@ -1,0 +1,12 @@
+.heart-box{
+  .text{
+    float: left;
+  }
+  .anticon-heart{
+    float: left;
+  }
+}
+.heart-box-select{
+  color: $mainColor!important;
+  cursor: pointer;
+}

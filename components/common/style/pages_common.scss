@@ -1,0 +1,46 @@
+.pages_common{
+    text-align: center;
+    padding: 12px 0;
+    background: #fff;
+    clear: both;
+    .ant-pagination,.speedy{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .ant-pagination{
+        
+        .ant-pagination-next,.ant-pagination-prev{
+            background-color: #fff;
+             border: 1px solid #eee;
+             padding: 0 10px;
+        }
+        .ant-pagination-item-active{
+            background: $mainColor;
+            a{
+                color: #fff;
+            }
+            
+        }
+    }
+    .speedy{
+        margin-left: 20px;
+        .ant-input-number{
+            width: 50px;
+            margin:0 10px;
+        }
+        &>span{
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .page_btns{
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding: 0 10px;
+            height: 32px;
+            vertical-align: top;
+            line-height: 32px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
